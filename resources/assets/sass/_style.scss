@@ -1,6 +1,12 @@
 body, html {
+  background: url(#{$images-path}green-bg.jpg) no-repeat center center;
   background-color: #1f3705;
+  background-size: cover !important;
   font-family: "Source Sans Pro", sans-serif;
+  height: auto;
+  min-height: 100%;
+  position: fixed;
+  width: 100%;
 }
 
 // Navigation
@@ -41,19 +47,13 @@ nav .button-collapse {
   top: 6%;
 }
 
-// Background
-.bg
-{
-  background: url(#{$images-path}green-bg.jpg) no-repeat center center;
-  background-size: cover !important;
-  position: fixed;
-  height: auto;
-  min-height: 100%;
-  width: 100%;
-}
-
 // Main container
 .container {
   padding-top: 25px;
   color: #ffe7ca;
+}
+
+// Nav dropdown
+.nav-login i.right {
+  position: relative;
 }

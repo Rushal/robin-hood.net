@@ -28,4 +28,4 @@
         <div class="treasure"><img src="images/chest.png" alt=""/></div>
     </div>
 </div>
-@stop
+@endsection

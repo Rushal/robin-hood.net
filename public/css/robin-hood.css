@@ -154,8 +154,14 @@
   top: 72%; }
 
 body, html {
+  background: url(//localhost:8000/images/green-bg.jpg) no-repeat center center;
   background-color: #1f3705;
-  font-family: "Source Sans Pro", sans-serif; }
+  background-size: cover !important;
+  font-family: "Source Sans Pro", sans-serif;
+  height: auto;
+  min-height: 100%;
+  position: fixed;
+  width: 100%; }
 
 nav {
   background: transparent url(//localhost:8000/images/top-bar.png) no-repeat 100% 100%;
@@ -187,17 +193,12 @@ nav .button-collapse {
 .brand-logo {
   top: 6%; }
 
-.bg {
-  background: url(//localhost:8000/images/green-bg.jpg) no-repeat center center;
-  background-size: cover !important;
-  position: fixed;
-  height: auto;
-  min-height: 100%;
-  width: 100%; }
-
 .container {
   padding-top: 25px;
   color: #ffe7ca; }
+
+.nav-login i.right {
+  position: relative; }
 
 @media (max-width: 1199px) {
   nav ul a, nav a {
