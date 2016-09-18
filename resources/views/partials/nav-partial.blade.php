@@ -21,8 +21,9 @@
                             <a href="#login-modal" class="modal-trigger">@lang('navigation.login')</a>
                         </li>
                     @else
-                        <li><a class="dropdown-button" href="#!" data-activates="account-dropdown"><i class="material-icons right">account_circle</i></a></li>
+                        <li><a class="dropdown-button" href="#!" data-activates="account-dropdown" data-beloworigin="true"><i class="material-icons right">account_circle</i></a></li>
                         <ul id="account-dropdown" class="dropdown-content">
+                            <div class="caret"></div>
                             <li><a href="#!">@lang('navigation.dashboard')</a></li>
                             <li class="divider"></li>
                             <li>

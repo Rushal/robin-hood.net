@@ -19,7 +19,7 @@
 
 .treasure {
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 45%;
   opacity: 0; }
 
@@ -197,8 +197,21 @@ nav .button-collapse {
   padding-top: 25px;
   color: #ffe7ca; }
 
-.nav-login i.right {
-  position: relative; }
+nav .dropdown-button {
+  height: 50px; }
+
+.dropdown-content {
+  overflow: visible; }
+
+.caret:before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 66%;
+  border-bottom: 10px solid #ffffff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  z-index: -1; }
 
 @media (max-width: 1199px) {
   nav ul a, nav a {
@@ -206,6 +219,7 @@ nav .button-collapse {
   .forest {
     width: 990px;
     height: 557px;
+    background: transparent url(//localhost:8000/images/trees-fade-bg-1200.png) no-repeat;
     background-size: 990px 557px; }
   .traveler-logo {
     max-height: 40px;
@@ -221,6 +235,7 @@ nav .button-collapse {
   .forest {
     width: 750px;
     height: 442px;
+    background: transparent url(//localhost:8000/images/trees-fade-bg-768.png) no-repeat;
     background-size: 750px 442px; }
   .traveler-logo {
     max-height: 35px;
@@ -238,7 +253,9 @@ nav .button-collapse {
     width: 175px;
     height: 100px; }
   .nav-login {
-    margin-top: 8px; } }
+    margin-top: 8px; }
+  .caret:before {
+    left: 30%; } }
 
 @media (max-width: 456px) {
   .brand-logo img {

@@ -24,7 +24,6 @@
 </head>
 
 <body>
-<div class="bg"></div>
 
 @include('partials.nav-partial')
 @include('partials.login-modal-partial')
@@ -33,7 +32,7 @@
 
 <!-- Scripts -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
+<script src="{{ asset('js/materialize-0.97.7.js') }}"></script>
 <script>
     $(".button-collapse").sideNav({
         menuWidth: 250,
@@ -42,8 +41,6 @@
     });
 
     $(document).ready(function() {
-        $(".dropdown-button").dropdown();
-
         $('.modal-trigger').leanModal({
             ready: function () {
                 $('ul.tabs').tabs();

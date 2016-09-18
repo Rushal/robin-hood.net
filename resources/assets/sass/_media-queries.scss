@@ -7,6 +7,7 @@
   .forest {
     width: 990px;
     height: 557px;
+    background: transparent url(#{$images-path}trees-fade-bg-1200.png) no-repeat;
     background-size: 990px 557px;
   }
   .traveler-logo
@@ -28,6 +29,7 @@
   .forest {
     width: 750px;
     height: 442px;
+    background: transparent url(#{$images-path}trees-fade-bg-768.png) no-repeat;
     background-size: 750px 442px;
   }
   .traveler-logo
@@ -54,6 +56,9 @@
 
   .nav-login {
     margin-top: 8px;
+  }
+  .caret:before {
+    left: 30%;
   }
 }
 

@@ -57,3 +57,19 @@ nav .button-collapse {
 .nav-login i.right {
   position: relative;
 }
+nav .dropdown-button {
+  height: 50px;
+}
+.dropdown-content {
+  overflow: visible;
+}
+.caret:before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 66%;
+  border-bottom: 10px solid #ffffff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  z-index: -1;
+}

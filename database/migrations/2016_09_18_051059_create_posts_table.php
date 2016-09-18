@@ -18,9 +18,9 @@ class CreatePostsTable extends Migration
             $table->integer('post_author')->unsigned()->index();
             $table->longText('post_content');
             $table->text('post_title');
-            $table->string('post_name')->index();
+            $table->string('post_name')->unique()->index();
             $table->string('post_type', 20);
-            $table->string('post_guid');
+            $table->string('post_guid')->unique();
             $table->timestamps();
             $table->index(['post_type', 'created_at', 'id']);
         });
