@@ -1,0 +1,127 @@
+
+.forest {
+  width: 1200px;
+  height: 675px;
+  position: relative;
+  background: transparent url(#{$images-path}trees-fade-bg.png) no-repeat;
+  background-size: 1200px 675px;
+  margin: 0 auto;
+  top: 40px;
+}
+
+.treasure {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  opacity: 0;
+}
+.treasure  img {
+  width: 250px;
+  height: 143px;
+}
+
+.traveler-logo
+{
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-height: 50px;
+  width: auto;
+  max-width: 80px;
+}
+
+.planks {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.plank
+{
+  background: url(#{$images-path}plank.png) no-repeat;
+  background-size: 104px 73px;
+  height: 73px;
+  position: absolute;
+  width: 104px;
+  opacity: 0;
+}
+
+.plank-1, .plank-2, .plank-3, .plank-4, .plank-5, .plank-6 { left: 16%; }
+.plank-7, .plank-8, .plank-9, .plank-10, .plank-11 { left: 27%; }
+.plank-12, .plank-13, .plank-14, .plank-15, .plank-16 { left: 63%; }
+.plank-17, .plank-18, .plank-19, .plank-20, .plank-21 { left: 80%; }
+
+.plank-1 { top: 12%; }
+.plank-2 {
+  top: 25%;
+  transform: rotate(-5deg);
+}
+.plank-3 {
+  top: 38%;
+  transform: rotate(2deg);
+}
+.plank-4 { top: 51%; }
+.plank-5 {
+  top: 64%;
+  transform: rotate(5deg);
+}
+.plank-6 {
+  top: 77%;
+  transform: rotate(-5deg);
+}
+.plank-7 {
+  top: 15%;
+  transform: rotate(-5deg);
+}
+.plank-8 {
+  top: 28%;
+}
+.plank-9 {
+  top: 41%;
+  transform: rotate(5deg);
+}
+.plank-10 {
+  top: 54%;
+  transform: rotate(2deg);
+}
+.plank-11 {
+  top: 67%;
+  transform: rotate(-4deg);
+}
+.plank-12 {
+  top: 15%;
+  transform: rotate(-5deg);
+}
+.plank-13 {
+  top: 28%;
+  transform: rotate(-5deg);
+}
+.plank-14 {
+  top: 41%;
+}
+.plank-15 {
+  top: 54%;
+}
+.plank-16 {
+  top: 67%;
+}
+.plank-17 {
+  top: 20%;
+}
+.plank-18 {
+  top: 33%;
+  transform: rotate(-3deg);
+}
+.plank-19 {
+  top: 46%;
+  transform: rotate(-3deg);
+}
+.plank-20 {
+  top: 59%;
+  transform: rotate(5deg);
+}
+.plank-21 {  top: 72%;  }

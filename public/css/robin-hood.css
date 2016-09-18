@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+.login-modal {
+  width: 500px; }
+
+.login-modal .tabs {
+  background-color: transparent; }
+
+.login-modal li :not(.active) {
+  background-color: #dddddd; }
+
+.forest {
+  width: 1200px;
+  height: 675px;
+  position: relative;
+  background: transparent url(//localhost:8000/images/trees-fade-bg.png) no-repeat;
+  background-size: 1200px 675px;
+  margin: 0 auto;
+  top: 40px; }
+
+.treasure {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  opacity: 0; }
+
+.treasure img {
+  width: 250px;
+  height: 143px; }
+
+.traveler-logo {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-height: 50px;
+  width: auto;
+  max-width: 80px; }
+
+.planks {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.plank {
+  background: url(//localhost:8000/images/plank.png) no-repeat;
+  background-size: 104px 73px;
+  height: 73px;
+  position: absolute;
+  width: 104px;
+  opacity: 0; }
+
+.plank-1, .plank-2, .plank-3, .plank-4, .plank-5, .plank-6 {
+  left: 16%; }
+
+.plank-7, .plank-8, .plank-9, .plank-10, .plank-11 {
+  left: 27%; }
+
+.plank-12, .plank-13, .plank-14, .plank-15, .plank-16 {
+  left: 63%; }
+
+.plank-17, .plank-18, .plank-19, .plank-20, .plank-21 {
+  left: 80%; }
+
+.plank-1 {
+  top: 12%; }
+
+.plank-2 {
+  top: 25%;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg); }
+
+.plank-3 {
+  top: 38%;
+  -webkit-transform: rotate(2deg);
+  transform: rotate(2deg); }
+
+.plank-4 {
+  top: 51%; }
+
+.plank-5 {
+  top: 64%;
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg); }
+
+.plank-6 {
+  top: 77%;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg); }
+
+.plank-7 {
+  top: 15%;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg); }
+
+.plank-8 {
+  top: 28%; }
+
+.plank-9 {
+  top: 41%;
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg); }
+
+.plank-10 {
+  top: 54%;
+  -webkit-transform: rotate(2deg);
+  transform: rotate(2deg); }
+
+.plank-11 {
+  top: 67%;
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-4deg); }
+
+.plank-12 {
+  top: 15%;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg); }
+
+.plank-13 {
+  top: 28%;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg); }
+
+.plank-14 {
+  top: 41%; }
+
+.plank-15 {
+  top: 54%; }
+
+.plank-16 {
+  top: 67%; }
+
+.plank-17 {
+  top: 20%; }
+
+.plank-18 {
+  top: 33%;
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg); }
+
+.plank-19 {
+  top: 46%;
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg); }
+
+.plank-20 {
+  top: 59%;
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg); }
+
+.plank-21 {
+  top: 72%; }
+
+body, html {
+  background-color: #1f3705;
+  font-family: "Source Sans Pro", sans-serif; }
+
+nav {
+  background: transparent url(//localhost:8000/images/top-bar.png) no-repeat 100% 100%;
+  background-size: cover;
+  height: 110px;
+  box-shadow: none;
+  padding: 0 10px;
+  color: #1f3705; }
+
+nav ul a, nav a {
+  color: #1f3705;
+  font-weight: 700;
+  font-size: 1.2rem; }
+
+nav ul a.active {
+  color: #668809; }
+
+nav ul a:hover {
+  background-color: transparent;
+  color: #84b405; }
+
+nav ul a.active:hover {
+  background-color: transparent;
+  color: #84b405; }
+
+nav .button-collapse {
+  top: 5%; }
+
+.brand-logo {
+  top: 6%; }
+
+.bg {
+  background: url(//localhost:8000/images/green-bg.jpg) no-repeat center center;
+  background-size: cover !important;
+  position: fixed;
+  height: auto;
+  min-height: 100%;
+  width: 100%; }
+
+.container {
+  padding-top: 25px;
+  color: #ffe7ca; }
+
+@media (max-width: 1199px) {
+  nav ul a, nav a {
+    font-size: 1rem; }
+  .forest {
+    width: 990px;
+    height: 557px;
+    background-size: 990px 557px; }
+  .traveler-logo {
+    max-height: 40px;
+    width: auto;
+    max-width: 70px; }
+  .plank {
+    background-size: 90px 54px;
+    height: 54px;
+    width: 90px;
+    opacity: 0; } }
+
+@media (max-width: 991px) {
+  .forest {
+    width: 750px;
+    height: 442px;
+    background-size: 750px 442px; }
+  .traveler-logo {
+    max-height: 35px;
+    width: auto;
+    max-width: 50px; }
+  .plank {
+    background-size: 80px 57px;
+    height: 57px;
+    width: 80px;
+    opacity: 0; }
+  .treasure {
+    left: 45%;
+    opacity: 0; }
+  .treasure img {
+    width: 175px;
+    height: 100px; }
+  .nav-login {
+    margin-top: 8px; } }
+
+@media (max-width: 456px) {
+  .brand-logo img {
+    width: 70% !important;
+    height: auto; } }
+
+/*# sourceMappingURL=robin-hood.css.map */

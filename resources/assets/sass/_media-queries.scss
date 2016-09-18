@@ -1,0 +1,69 @@
+
+@media (max-width:1199px) {
+  nav ul a, nav a {
+    font-size: 1rem;
+  }
+
+  .forest {
+    width: 990px;
+    height: 557px;
+    background-size: 990px 557px;
+  }
+  .traveler-logo
+  {
+    max-height: 40px;
+    width: auto;
+    max-width: 70px;
+  }
+  .plank
+  {
+    background-size: 90px 54px;
+    height: 54px;
+    width: 90px;
+    opacity: 0;
+  }
+}
+
+@media (max-width:991px) {
+  .forest {
+    width: 750px;
+    height: 442px;
+    background-size: 750px 442px;
+  }
+  .traveler-logo
+  {
+    max-height: 35px;
+    width: auto;
+    max-width: 50px;
+  }
+  .plank
+  {
+    background-size: 80px 57px;
+    height: 57px;
+    width: 80px;
+    opacity: 0;
+  }
+  .treasure {
+    left: 45%;
+    opacity: 0;
+  }
+  .treasure img {
+    width: 175px;
+    height: 100px;
+  }
+
+  .nav-login {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width:456px) {
+  .brand-logo img {
+    width: 70% !important;
+    height: auto;
+  }
+}
