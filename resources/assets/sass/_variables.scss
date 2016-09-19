@@ -10,5 +10,12 @@ $primary-color-dark: darken($primary-color, 15%);
 $secondary-color: color("robin-hood-secondary", "darken-1");
 $success-color: color("green", "base");
 $error-color: color("red", "base");
-$link-color: color("robin-hood-primary", "base");
 
+$link-color: color("robin-hood-primary", "base");
+$link-active: color("robin-hood-primary", "links-active");
+$link-hover: color("robin-hood-primary", "links-hover");
+
+$font-color: color("robin-hood-primary", "text");
+
+$link-alt: color("robin-hood-secondary", "lighten-3");
+$link-alt-hover: color("robin-hood-secondary", "lighten-4");

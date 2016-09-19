@@ -1,7 +1,10 @@
 
 @media (max-width:1199px) {
+  nav {
+    padding: 0 5%;
+  }
   nav ul a, nav a {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .forest {
@@ -63,7 +66,9 @@
 }
 
 @media (max-width: 768px) {
-
+  nav {
+    padding: 0;
+  }
 }
 
 @media (max-width:456px) {

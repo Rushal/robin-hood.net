@@ -1,50 +1,60 @@
 <div id="login-modal" class="modal login-modal">
-    <ul class="tabs">
-        <li class="tab"><a href="#login" class="active">@lang('navigation.login')</a></li>
-        <li class="tab"><a href="#register">@lang('navigation.register')</a></li>
-    </ul>
+    <div class="col s12">
+        <ul class="tabs">
+            <li class="tab col s3"><a href="#login" class="active">@lang('navigation.login')</a></li>
+            <li class="tab col s3"><a href="#register">@lang('navigation.register')</a></li>
+        </ul>
+    </div>
 
     <div class="modal-content">
         <div class="row">
-            <div id="login" class="col s12">
-                <form role="form" method="POST" action="{{ url('/login') }}">
+            <div id="login">
+                <form role="form" method="POST" action="{{ url('/login') }}" class="col s12">
                     {{ csrf_field() }}
 
-                    <div class="input-field col s12{{ $errors->has('email') ? ' has-error' : '' }}">
-                        <input id="email" type="email" class="validate" name="email" value="{{ old('email') }}" required autofocus>
-                        <label for="email">@lang('navigation.email.long')</label>
+                    <div class="row">
+                        <div class="input-field col s12{{ $errors->has('email') ? ' has-error' : '' }}">
+                            <input id="email" type="email" class="validate" name="email" value="{{ old('email') }}" required autofocus>
+                            <label for="email">@lang('navigation.email.long')</label>
 
-                        @if ($errors->has('email'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('email') }}</strong>
-                            </span>
-                        @endif
+                            @if ($errors->has('email'))
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('email') }}</strong>
+                                </span>
+                            @endif
+                        </div>
                     </div>
 
-                    <div class="input-field col s12{{ $errors->has('password') ? ' has-error' : '' }}">
-                        <input id="password" type="password" class="validate" name="password" required>
-                        <label for="password">@lang('navigation.password')</label>
+                    <div class="row">
+                        <div class="input-field col s12{{ $errors->has('password') ? ' has-error' : '' }}">
+                            <input id="password" type="password" class="validate" name="password" required>
+                            <label for="password">@lang('navigation.password')</label>
 
-                        @if ($errors->has('password'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('password') }}</strong>
-                            </span>
-                        @endif
+                            @if ($errors->has('password'))
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('password') }}</strong>
+                                </span>
+                            @endif
+                        </div>
                     </div>
 
-                    <div class="checkbox center" style="margin-bottom: 15px;">
-                        <input type="checkbox" id="remember" name="remember">
-                        <label for="remember">@lang('navigation.remember')</label>
+                    <div class="row">
+                        <div class="checkbox center col s12" style="margin-bottom: 15px;">
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember">@lang('navigation.remember')</label>
+                        </div>
                     </div>
 
-                    <div class="col s12 center">
-                        <button type="submit" class="btn waves-effect">@lang('navigation.login')</button>
-                        <a class="btn-flat" href="{{ url('/password/reset') }}">@lang('navigation.password.reset')</a>
+                    <div class="row">
+                        <div class="col s12 center">
+                            <button type="submit" class="btn waves-effect">@lang('navigation.login')</button>
+                            <a class="btn-flat" href="{{ url('/password/reset') }}">@lang('navigation.password.reset')</a>
+                        </div>
                     </div>
                 </form>
             </div>
-            <div id="register" class="col s12">
-                <form role="form" method="POST" action="{{ url('/register') }}">
+            <div id="register">
+                <form role="form" method="POST" action="{{ url('/register') }}" class="col s12">
                     {{ csrf_field() }}
 
                     <div class="input-field col s12{{ $errors->has('name') ? ' has-error' : '' }}">

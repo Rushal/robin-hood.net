@@ -14,5 +14,17 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/how-it-works', function () {
+    return view('hit');
+});
+Route::get('/history', function () {
+    return view('history');
+});
+Route::get('/bookkeeping', function () {
+    return view('bookkeeping');
+});
+Route::get('/contact', function () {
+    return view('contact');
+});
 
 Auth::routes();

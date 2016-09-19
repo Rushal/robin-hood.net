@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'lumberjackregular';
+  src: url(#{$fonts-path}lumberjack-webfont.eot);
+  src: url(#{$fonts-path}lumberjack-webfont.eot?#iefix) format('embedded-opentype'),
+    url(#{$fonts-path}lumberjack-webfont.woff2) format('woff2'),
+    url(#{$fonts-path}lumberjack-webfont.woff) format('woff'),
+    url(#{$fonts-path}lumberjack-webfont.ttf) format('truetype'),
+    url(#{$fonts-path}lumberjack-webfont.svg#lumberjackregular) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

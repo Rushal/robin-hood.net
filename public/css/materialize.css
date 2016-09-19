@@ -1666,6 +1666,24 @@
 .robin-hood-primary-text.text-accent-4 {
   color: #000000 !important; }
 
+.robin-hood-primary.links-active {
+  background-color: #668809 !important; }
+
+.robin-hood-primary-text.text-links-active {
+  color: #668809 !important; }
+
+.robin-hood-primary.links-hover {
+  background-color: #7aab05 !important; }
+
+.robin-hood-primary-text.text-links-hover {
+  color: #7aab05 !important; }
+
+.robin-hood-primary.text {
+  background-color: #ffe7ca !important; }
+
+.robin-hood-primary-text.text-text {
+  color: #ffe7ca !important; }
+
 .robin-hood-secondary {
   background-color: #8C6A40 !important; }
 

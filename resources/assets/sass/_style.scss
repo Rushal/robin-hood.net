@@ -1,11 +1,11 @@
 body, html {
-  background: url(#{$images-path}green-bg.jpg) no-repeat center center;
-  background-color: #1f3705;
+  background: url(#{$images-path}green-bg.jpg) no-repeat center center fixed;
+  background-color: $primary-color;
   background-size: cover !important;
   font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
   height: auto;
   min-height: 100%;
-  position: fixed;
   width: 100%;
 }
 
@@ -15,28 +15,23 @@ nav {
   background-size: cover;
   height: 110px;
   box-shadow: none;
-  padding: 0 10px;
-  color: #1f3705;
+  padding: 0 10%;
+  color: $primary-color;
 }
 
 nav ul a, nav a {
-  color: #1f3705;
+  color: $primary-color;
   font-weight: 700;
   font-size: 1.2rem;
 }
 
 nav ul a.active {
-  color: #668809;
+  color: $link-active;
 }
 
-nav ul a:hover {
+nav ul a:hover, nav ul a.active:hover, .side-nav a.logo:hover {
   background-color: transparent;
-  color: #84b405;
-}
-
-nav ul a.active:hover {
-  background-color: transparent;
-  color: #84b405;
+  color: $link-hover;
 }
 
 nav .button-collapse {
@@ -47,14 +42,17 @@ nav .button-collapse {
   top: 6%;
 }
 
-// Main container
-.container {
-  padding-top: 25px;
-  color: #ffe7ca;
+.side-nav a {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.side-nav a.active, .side-nav a:hover {
+  background-color: rgba(0,0,0,0.2);
+  color: $primary-color;
 }
 
 // Nav dropdown
-.nav-login i.right {
+.nav-login {
   position: relative;
 }
 nav .dropdown-button {
@@ -72,4 +70,42 @@ nav .dropdown-button {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   z-index: -1;
+}
+
+.link-alt {
+  color: $link-alt;
+}
+.link-alt:hover {
+  color: $link-alt-hover;
+}
+
+// Main container
+.container {
+  color: $font-color;
+  font-size: 1.1rem;
+  padding-top: 50px;
+}
+
+// Pages
+.page-title {
+  font-family: "lumberjackregular", "Source Sans Pro", sans-serif;
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+.page-sub-title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  position: relative;
+  top: -20px;
+}
+.page-hr {
+  border: 1px solid $font-color;
+  position: relative;
+  top: -20px;
+}
+
+// Login - mobile
+.login {
+  background-color: white;
+  padding-bottom: 10px !important;
 }

@@ -2,9 +2,9 @@
 .login-modal {
   width: 500px;
 }
-.login-modal .tabs {
+.login-modal .tabs, .login .tabs {
   background-color: transparent;
 }
-.login-modal li :not(.active) {
+.login-modal li :not(.active), .login li :not(.active) {
   background-color: #dddddd;
 }
