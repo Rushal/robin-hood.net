@@ -1,0 +1,17 @@
+table {
+  border-collapse: separate;
+  border-spacing: 12px;
+}
+
+tr {
+  background-color: #668809;
+}
+
+td, th {
+  border-radius: 0;
+  padding: 5px;
+}
+
+thead tr {
+  background-color: transparent !important;
+}

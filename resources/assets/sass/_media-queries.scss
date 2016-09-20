@@ -26,6 +26,19 @@
     width: 90px;
     opacity: 0;
   }
+
+  .rotate-cw-90 img {
+    height: 52px;
+    margin: 40px 0 0 20px;
+    width: 100px;
+  }
+  .page-numbers-large {
+    font-size: 6rem;
+  }
+
+  .page-title-2 {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width:991px) {
@@ -63,11 +76,49 @@
   .caret:before {
     left: 30%;
   }
+
+  .page-title-2 {
+    font-size: 3.5rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .home-bg {
+    background: url(#{$images-path}mobile-tall-bg.jpg) no-repeat center 0 fixed;
+  }
+
   nav {
     padding: 0;
+  }
+
+  .rotate-cw-90 img {
+    height: 42px;
+    margin: 40px 0 0 20px;
+    width: 80px;
+  }
+  .page-numbers-large {
+    font-size: 5rem;
+  }
+
+  .page-title-2 {
+    font-size: 2.7rem;
+  }
+  .page-sub-title-2, .page-sub-title-3 {
+    font-size: 1.2rem;
+  }
+
+  .forest {
+    display: none !important;
+  }
+  .forest-mobile {
+    display: block !important;
+    padding-left: 0;
+  }
+  .forest-mobile .traveler-logo
+  {
+    max-height: 90px;
+    width: auto;
+    max-width: 90px;
   }
 }
 
@@ -75,5 +126,9 @@
   .brand-logo img {
     width: 70% !important;
     height: auto;
+  }
+
+  .treasure-mobile {
+    left: -50%;
   }
 }

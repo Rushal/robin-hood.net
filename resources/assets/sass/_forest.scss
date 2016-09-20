@@ -9,15 +9,29 @@
   top: 40px;
 }
 
+.forest-mobile {
+  display: none;
+  padding-left: 50px;
+}
+
 .treasure {
   position: absolute;
   top: 65%;
   left: 45%;
   opacity: 0;
 }
+.treasure-mobile {
+  left: -20%;
+  top: 200px;
+  position: relative;
+}
 .treasure  img {
   width: 250px;
   height: 143px;
+}
+.treasure-mobile  img {
+  width: 300px;
+  height: 172px;
 }
 
 .traveler-logo
@@ -40,7 +54,7 @@
   width: 100%;
 }
 
-.plank
+.plank, .plank-mobile
 {
   background: url(#{$images-path}plank.png) no-repeat;
   background-size: 104px 73px;
@@ -48,6 +62,14 @@
   position: absolute;
   width: 104px;
   opacity: 0;
+}
+.plank-mobile {
+  background-size: 140px 99px;
+  height: 99px;
+  margin-bottom: 40px;
+  opacity: 1;
+  position: relative;
+  width: 140px;
 }
 
 .plank-1, .plank-2, .plank-3, .plank-4, .plank-5, .plank-6 { left: 16%; }

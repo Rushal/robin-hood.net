@@ -1,0 +1,63 @@
+
+// Navigation
+nav {
+  background: transparent url(#{$images-path}top-bar.png) no-repeat 100% 100%;
+  background-size: cover;
+  height: 110px;
+  box-shadow: none;
+  padding: 0 10%;
+  color: $primary-color;
+}
+
+nav ul a, nav a {
+  color: $primary-color;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+nav ul a.active {
+  color: $link-active;
+}
+
+nav ul a:hover, nav ul a.active:hover, .side-nav a.logo:hover {
+  background-color: transparent;
+  color: $link-hover;
+}
+
+nav .button-collapse {
+  top: 5%;
+}
+
+.brand-logo {
+  top: 6%;
+}
+
+.side-nav a {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.side-nav a.active, .side-nav a:hover {
+  background-color: rgba(0,0,0,0.2);
+  color: $primary-color;
+}
+
+// Nav dropdown
+.nav-login {
+  position: relative;
+}
+nav .dropdown-button {
+  height: 50px;
+}
+.dropdown-content {
+  overflow: visible;
+}
+.caret:before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 66%;
+  border-bottom: 10px solid #ffffff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  z-index: -1;
+}

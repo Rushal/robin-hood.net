@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/how-it-works', function () {
-    return view('hit');
+    return view('how-it-works');
 });
 Route::get('/history', function () {
     return view('history');

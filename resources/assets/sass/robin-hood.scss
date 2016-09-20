@@ -10,7 +10,9 @@ $fonts-path: '//localhost:8000/fonts/';
 @import "variables";
 
 @import "fonts";
+@import "nav";
 @import "login-modal";
 @import "forest";
+@import "tables";
 @import "style";
 @import "media-queries";

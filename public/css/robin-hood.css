@@ -1794,6 +1794,59 @@
   font-weight: normal;
   font-style: normal; }
 
+nav {
+  background: transparent url(//localhost:8000/images/top-bar.png) no-repeat 100% 100%;
+  background-size: cover;
+  height: 110px;
+  box-shadow: none;
+  padding: 0 10%;
+  color: #1f3705; }
+
+nav ul a, nav a {
+  color: #1f3705;
+  font-weight: 700;
+  font-size: 1.2rem; }
+
+nav ul a.active {
+  color: #668809; }
+
+nav ul a:hover, nav ul a.active:hover, .side-nav a.logo:hover {
+  background-color: transparent;
+  color: #7aab05; }
+
+nav .button-collapse {
+  top: 5%; }
+
+.brand-logo {
+  top: 6%; }
+
+.side-nav a {
+  font-size: 1.3rem;
+  font-weight: bold; }
+
+.side-nav a.active, .side-nav a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #1f3705; }
+
+.nav-login {
+  position: relative; }
+
+nav .dropdown-button {
+  height: 50px; }
+
+.dropdown-content {
+  overflow: visible; }
+
+.caret:before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 66%;
+  border-bottom: 10px solid #ffffff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  z-index: -1; }
+
 .login-modal {
   width: 500px; }
 
@@ -1802,6 +1855,10 @@
 
 .login-modal li :not(.active), .login li :not(.active) {
   background-color: #dddddd; }
+
+.login {
+  background-color: white;
+  padding-bottom: 10px !important; }
 
 .forest {
   width: 1200px;
@@ -1812,15 +1869,28 @@
   margin: 0 auto;
   top: 40px; }
 
+.forest-mobile {
+  display: none;
+  padding-left: 50px; }
+
 .treasure {
   position: absolute;
   top: 65%;
   left: 45%;
   opacity: 0; }
 
+.treasure-mobile {
+  left: -20%;
+  top: 200px;
+  position: relative; }
+
 .treasure img {
   width: 250px;
   height: 143px; }
+
+.treasure-mobile img {
+  width: 300px;
+  height: 172px; }
 
 .traveler-logo {
   bottom: 0;
@@ -1839,13 +1909,21 @@
   top: 0;
   width: 100%; }
 
-.plank {
+.plank, .plank-mobile {
   background: url(//localhost:8000/images/plank.png) no-repeat;
   background-size: 104px 73px;
   height: 73px;
   position: absolute;
   width: 104px;
   opacity: 0; }
+
+.plank-mobile {
+  background-size: 140px 99px;
+  height: 99px;
+  margin-bottom: 40px;
+  opacity: 1;
+  position: relative;
+  width: 140px; }
 
 .plank-1, .plank-2, .plank-3, .plank-4, .plank-5, .plank-6 {
   left: 16%; }
@@ -1948,68 +2026,31 @@
 .plank-21 {
   top: 72%; }
 
-body, html {
-  background: url(//localhost:8000/images/green-bg.jpg) no-repeat center center fixed;
+table {
+  border-collapse: separate;
+  border-spacing: 12px; }
+
+tr {
+  background-color: #668809; }
+
+td, th {
+  border-radius: 0;
+  padding: 5px; }
+
+thead tr {
+  background-color: transparent !important; }
+
+body {
   background-color: #1f3705;
-  background-size: cover !important;
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: bold;
+  font-weight: bold; }
+
+.home-bg, .bg {
+  background: url(//localhost:8000/images/green-bg.jpg) no-repeat center center fixed;
+  background-size: cover !important;
   height: auto;
   min-height: 100%;
   width: 100%; }
-
-nav {
-  background: transparent url(//localhost:8000/images/top-bar.png) no-repeat 100% 100%;
-  background-size: cover;
-  height: 110px;
-  box-shadow: none;
-  padding: 0 10%;
-  color: #1f3705; }
-
-nav ul a, nav a {
-  color: #1f3705;
-  font-weight: 700;
-  font-size: 1.2rem; }
-
-nav ul a.active {
-  color: #668809; }
-
-nav ul a:hover, nav ul a.active:hover, .side-nav a.logo:hover {
-  background-color: transparent;
-  color: #7aab05; }
-
-nav .button-collapse {
-  top: 5%; }
-
-.brand-logo {
-  top: 6%; }
-
-.side-nav a {
-  font-size: 1.3rem;
-  font-weight: bold; }
-
-.side-nav a.active, .side-nav a:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #1f3705; }
-
-.nav-login {
-  position: relative; }
-
-nav .dropdown-button {
-  height: 50px; }
-
-.dropdown-content {
-  overflow: visible; }
-
-.caret:before {
-  content: '';
-  position: absolute;
-  top: -7px;
-  left: 66%;
-  border-bottom: 10px solid #ffffff;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  z-index: -1; }
 
 .link-alt {
   color: #B28957; }
@@ -2022,25 +2063,51 @@ nav .dropdown-button {
   font-size: 1.1rem;
   padding-top: 50px; }
 
-.page-title {
+.page-title, .page-title-2 {
   font-family: "lumberjackregular", "Source Sans Pro", sans-serif;
   font-size: 5rem;
+  font-weight: normal;
   margin-bottom: 0; }
+
+.page-title-2 {
+  font-size: 4.5rem; }
+
+.page-sub-title, .page-sub-title-2, .page-sub-title-3 {
+  position: relative;
+  top: -20px; }
+
+.page-sub-title-2, .page-sub-title-3 {
+  font-family: "Source Sans Pro", sans-serif; }
 
 .page-sub-title {
   font-size: 1.2rem;
-  font-weight: 900;
-  position: relative;
-  top: -20px; }
+  font-weight: 900; }
+
+.page-sub-title-2 {
+  font-size: 2rem;
+  font-weight: bold; }
+
+.page-sub-title-3 {
+  font-size: 1.5rem;
+  font-weight: 900; }
 
 .page-hr {
   border: 1px solid #ffe7ca;
   position: relative;
   top: -20px; }
 
-.login {
-  background-color: white;
-  padding-bottom: 10px !important; }
+.browser-default {
+  padding-left: 6%; }
+
+.rotate-cw-90 img {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin: 50px 0 0 20px; }
+
+.page-numbers-large {
+  font-family: "lumberjackregular", "Source Sans Pro", sans-serif;
+  font-size: 8rem;
+  font-weight: normal; }
 
 @media (max-width: 1199px) {
   nav {
@@ -2060,7 +2127,15 @@ nav .dropdown-button {
     background-size: 90px 54px;
     height: 54px;
     width: 90px;
-    opacity: 0; } }
+    opacity: 0; }
+  .rotate-cw-90 img {
+    height: 52px;
+    margin: 40px 0 0 20px;
+    width: 100px; }
+  .page-numbers-large {
+    font-size: 6rem; }
+  .page-title-2 {
+    font-size: 4rem; } }
 
 @media (max-width: 991px) {
   .forest {
@@ -2086,15 +2161,40 @@ nav .dropdown-button {
   .nav-login {
     margin-top: 8px; }
   .caret:before {
-    left: 30%; } }
+    left: 30%; }
+  .page-title-2 {
+    font-size: 3.5rem; } }
 
 @media (max-width: 768px) {
+  .home-bg {
+    background: url(//localhost:8000/images/mobile-tall-bg.jpg) no-repeat center 0 fixed; }
   nav {
-    padding: 0; } }
+    padding: 0; }
+  .rotate-cw-90 img {
+    height: 42px;
+    margin: 40px 0 0 20px;
+    width: 80px; }
+  .page-numbers-large {
+    font-size: 5rem; }
+  .page-title-2 {
+    font-size: 2.7rem; }
+  .page-sub-title-2, .page-sub-title-3 {
+    font-size: 1.2rem; }
+  .forest {
+    display: none !important; }
+  .forest-mobile {
+    display: block !important;
+    padding-left: 0; }
+  .forest-mobile .traveler-logo {
+    max-height: 90px;
+    width: auto;
+    max-width: 90px; } }
 
 @media (max-width: 456px) {
   .brand-logo img {
     width: 70% !important;
-    height: auto; } }
+    height: auto; }
+  .treasure-mobile {
+    left: -50%; } }
 
 /*# sourceMappingURL=robin-hood.css.map */

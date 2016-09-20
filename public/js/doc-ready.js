@@ -21,4 +21,12 @@ $(document).ready(function() {
             }
         }
     });
+
+    var body = document.querySelector(".home-bg"),
+        doc = document.documentElement,
+        scrollPercent;
+    $(window).scroll(function () {
+        scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
+        body.style.backgroundPosition = "center " + scrollPercent + "%";
+    });
 });

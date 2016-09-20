@@ -15,8 +15,8 @@
             <iframe width="854" height="480" src="https://www.youtube.com/embed/e6xHpEgoa6M" frameborder="0" allowfullscreen></iframe>
         </div>
 
-        <p>There are 2.2 billion children in the world; 1 billion live in poverty (every second child)</p>
-        <ul>
+        <h5>There are 2.2 billion children in the world; 1 billion live in poverty (every second child)</h5>
+        <ul class="browser-default">
             <li>640 million live without adequate shelter (1 in 3)</li>
             <li>400 million live with no access to safe water (1 in 5)</li>
             <li>270 million live with no access to health services (1 in 7)</li>

@@ -19,7 +19,7 @@
     </script>
 </head>
 
-<body>
+<body @if (\Request::is('/')) class="home-bg" @else class="bg" @endif>
     @include('partials.nav-partial')
     @include('partials.login-modal-partial')
 
