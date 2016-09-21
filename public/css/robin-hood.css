@@ -2058,6 +2058,9 @@ body {
 .link-alt:hover {
   color: #C9AC88; }
 
+.hidden {
+  display: none; }
+
 .container {
   color: #ffe7ca;
   font-size: 1.1rem;
@@ -2108,6 +2111,18 @@ body {
   font-family: "lumberjackregular", "Source Sans Pro", sans-serif;
   font-size: 8rem;
   font-weight: normal; }
+
+.table-collapsible-header {
+  background-color: #8c6a40 !important;
+  margin-bottom: -24px;
+  cursor: pointer; }
+
+.table-collapsible-content {
+  margin-top: 24px; }
+
+.arrow .material-icons {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg); }
 
 @media (max-width: 1199px) {
   nav {
@@ -2167,8 +2182,9 @@ body {
 
 @media (max-width: 768px) {
   .home-bg {
-    background: url(//localhost:8000/images/mobile-tall-bg.jpg) no-repeat center 0 fixed; }
+    background: url(//localhost:8000/images/mobile-bg.jpg) no-repeat center 0 fixed; }
   nav {
+    background: transparent url(//localhost:8000/images/top-bar-sm.png) no-repeat 100% 100%;
     padding: 0; }
   .rotate-cw-90 img {
     height: 42px;

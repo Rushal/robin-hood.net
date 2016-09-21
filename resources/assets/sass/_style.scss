@@ -18,6 +18,10 @@ body {
   color: $link-alt-hover;
 }
 
+.hidden {
+  display: none;
+}
+
 // Main container
 .container {
   color: $font-color;
@@ -77,4 +81,19 @@ body {
   font-family: "lumberjackregular", "Source Sans Pro", sans-serif;
   font-size: 8rem;
   font-weight: normal;
+}
+
+// collapsible
+.table-collapsible-header {
+  background-color: #8c6a40 !important;
+  margin-bottom: -24px;
+  cursor: pointer;
+}
+
+.table-collapsible-content {
+  margin-top: 24px;
+}
+
+.arrow .material-icons {
+  transform: rotate(90deg);
 }
