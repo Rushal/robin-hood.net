@@ -35,7 +35,6 @@ $(document).ready(function() {
     $('.table-collapsible-header').click(function(){
         $(this).nextUntil('tr.table-collapsible-header').toggle();
         $(this).find(':last-child').toggleClass('arrow');
-        /*$(this).next("div").slideToggle(1000);*/
     });
     $('.table-collapsible-header').nextUntil('tr.table-collapsible-header').hide();
 });
