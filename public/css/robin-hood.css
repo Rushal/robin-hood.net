@@ -1795,7 +1795,7 @@
   font-style: normal; }
 
 nav {
-  background: transparent url(//localhost:8000/images/top-bar.png) no-repeat 100% 100%;
+  background: transparent url(//dev.robin-hood.net/images/top-bar.png) no-repeat 100% 100%;
   background-size: cover;
   height: 110px;
   box-shadow: none;
@@ -1864,7 +1864,7 @@ nav .dropdown-button {
   width: 1200px;
   height: 675px;
   position: relative;
-  background: transparent url(//localhost:8000/images/trees-fade-bg.png) no-repeat;
+  background: transparent url(//dev.robin-hood.net/images/trees-fade-bg.png) no-repeat;
   background-size: 1200px 675px;
   margin: 0 auto;
   top: 0; }
@@ -1910,7 +1910,7 @@ nav .dropdown-button {
   width: 100%; }
 
 .plank, .plank-mobile {
-  background: url(//localhost:8000/images/plank.png) no-repeat;
+  background: url(//dev.robin-hood.net/images/plank.png) no-repeat;
   background-size: 104px 73px;
   height: 73px;
   position: absolute;
@@ -2046,7 +2046,7 @@ body {
   font-weight: bold; }
 
 .home-bg, .bg {
-  background: url(//localhost:8000/images/green-bg.jpg) no-repeat center center fixed;
+  background: url(//dev.robin-hood.net/images/green-bg.jpg) no-repeat center center fixed;
   background-size: cover !important;
   height: auto;
   min-height: 100%;
@@ -2132,7 +2132,7 @@ body {
   .forest {
     width: 990px;
     height: 557px;
-    background: transparent url(//localhost:8000/images/trees-fade-bg-1200.png) no-repeat;
+    background: transparent url(//dev.robin-hood.net/images/trees-fade-bg-1200.png) no-repeat;
     background-size: 990px 557px; }
   .traveler-logo {
     max-height: 40px;
@@ -2156,7 +2156,7 @@ body {
   .forest {
     width: 750px;
     height: 442px;
-    background: transparent url(//localhost:8000/images/trees-fade-bg-768.png) no-repeat;
+    background: transparent url(//dev.robin-hood.net/images/trees-fade-bg-768.png) no-repeat;
     background-size: 750px 442px; }
   .traveler-logo {
     max-height: 35px;
@@ -2182,9 +2182,9 @@ body {
 
 @media (max-width: 768px) {
   .home-bg {
-    background: url(//localhost:8000/images/mobile-bg.jpg) no-repeat center 0 fixed; }
+    background: url(//dev.robin-hood.net/images/mobile-bg.jpg) no-repeat center 0 fixed; }
   nav {
-    background: transparent url(//localhost:8000/images/top-bar-sm.png) no-repeat 100% 100%;
+    background: transparent url(//dev.robin-hood.net/images/top-bar-sm.png) no-repeat 100% 100%;
     padding: 0; }
   .rotate-cw-90 img {
     height: 42px;
