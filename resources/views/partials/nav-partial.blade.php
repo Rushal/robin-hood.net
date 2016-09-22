@@ -2,7 +2,7 @@
     <nav>
         <div class="nav-wrapper">
             <a href="#" data-activates="side-nav" class="button-collapse right"><i class="material-icons">menu</i></a>
-            <a href="#" class="brand-logo left">
+            <a href="{{ url('/') }}" class="brand-logo left">
                 <img src="{{ asset('images/logo.png') }}" width="300" height="30" alt="@lang('navigation.logoalt')" />
             </a>
 

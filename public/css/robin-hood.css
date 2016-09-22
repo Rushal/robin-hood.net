@@ -1867,7 +1867,7 @@ nav .dropdown-button {
   background: transparent url(//localhost:8000/images/trees-fade-bg.png) no-repeat;
   background-size: 1200px 675px;
   margin: 0 auto;
-  top: 40px; }
+  top: 0; }
 
 .forest-mobile {
   display: none;
@@ -2211,6 +2211,10 @@ body {
     width: 70% !important;
     height: auto; }
   .treasure-mobile {
-    left: -50%; } }
+    left: -50%; }
+  .page-title, .page-title-2 {
+    font-size: 3rem; }
+  table {
+    border-spacing: 7px; } }
 
 /*# sourceMappingURL=robin-hood.css.map */

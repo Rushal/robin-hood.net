@@ -22,16 +22,6 @@ $(document).ready(function() {
         }
     });
 
-    var body = document.querySelector(".home-bg"),
-        doc = document.documentElement,
-        scrollPercent;
-    $(window).scroll(function () {
-        scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
-        body.style.backgroundPosition = "center " + scrollPercent + "%";
-        /*body.style.backgroundPosition = "center " + ( 50 -(Math.max(doc.scrollTop, body.scrollTop) / 4) ) + "px";*/
-    });
-
-
     $('.table-collapsible-header').click(function(){
         $(this).nextUntil('tr.table-collapsible-header').toggle();
         $(this).find(':last-child').toggleClass('arrow');
