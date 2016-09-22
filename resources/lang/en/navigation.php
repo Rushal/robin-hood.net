@@ -30,6 +30,7 @@ return [
     'password.reset'        => 'Forgot your password?',
     'register'              => 'Register',
     'remember'              => 'Remember me',
+    'message'               => 'Message',
 
 
 ];

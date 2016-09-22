@@ -3,6 +3,11 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
 }
+
+input, textarea {
+  color: #000;
+}
+
 .home-bg, .bg {
   background: url(#{$images-path}green-bg.jpg) no-repeat center center fixed;
   background-size: cover !important;
