@@ -1878,7 +1878,7 @@ nav .dropdown-button {
 .treasure {
   position: absolute;
   top: 65%;
-  left: 45%;
+  left: 42%;
   opacity: 0; }
 
 .treasure-mobile {
@@ -2112,10 +2112,17 @@ input, textarea {
   transform: rotate(90deg);
   margin: 50px 0 0 20px; }
 
-.page-numbers-large {
+.rotate-180 img {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.page-numbers-large, .page-numbers-med {
   font-family: "lumberjackregular", "Source Sans Pro", sans-serif;
   font-size: 8rem;
   font-weight: normal; }
+
+.page-numbers-med {
+  font-size: 6rem; }
 
 .table-collapsible-header {
   background-color: #8c6a40 !important;
@@ -2131,6 +2138,13 @@ input, textarea {
 
 .card-title {
   color: #1f3705; }
+
+.remodal-overlay {
+  background: rgba(0, 0, 0, 0.5); }
+
+.remodal-chest {
+  background-color: transparent;
+  color: #ffe7ca; }
 
 @media (max-width: 1199px) {
   nav {

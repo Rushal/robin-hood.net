@@ -1,11 +1,6 @@
 @extends('layouts.primary-layout')
 
 @section('content')
-<!--<div class="tutorial">
-    <img src="{{ asset('images/tutorial-1200.png') }}"/>
-</div>-->
-
-
 <div class="forest">
     <div class="tutorial"></div>
     <div class="planks">
@@ -62,6 +57,30 @@
 
             <div class="treasure-mobile"><img src="images/chest.png" alt=""/></div>
         </div>
+    </div>
+</div>
+
+<div class="remodal remodal-chest" data-remodal-id="chest" data-remodal-options="hashTracking: false">
+    <div class="row">
+        <img src="{{ asset('images/bow.png') }}"/>
+    </div>
+
+    <div class="row">
+        <div class="page-numbers-med">
+            2,376,235
+            <div class="page-sub-title-3">PEOPLE HAVE TRAVELED IN THE<br/>FOREST, TRANSFERRING</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="page-numbers-med">
+            <span style="color: #9fce1d;">$776,235</span>
+            <div class="page-sub-title-3">THE WORLD THANKS YOU.<br/>ENJOY YOUR PERFECT DAY!</div>
+        </div>
+    </div>
+
+    <div class="row rotate-180">
+        <img src="{{ asset('images/bow.png') }}"/>
     </div>
 </div>
 @endsection

@@ -16,7 +16,7 @@
             <div class="col m2 hide-on-small-only rotate-cw-90"><img src="{{ asset ('images/bow.png') }}"/></div>
 
             <div class="col s12 m5 page-numbers-large center-align">
-                $776,235
+                <span style="color: #9fce1d;">$776,235</span>
                 <div class="page-sub-title-2">Wealth Transfered</div>
             </div>
         </div>

@@ -27,6 +27,8 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::post('/tutorial', 'HomeController@tutorial');
+Route::get('/chest-click', function () {
+    return view('chest-click');
+});
 
 Auth::routes();

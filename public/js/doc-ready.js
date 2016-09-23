@@ -18,6 +18,10 @@ $(document).ready(function() {
             planks++;
             if(planks >= 21){
                 $(".treasure").fadeTo("slow", 1.0);
+                $(".treasure img").wrap($('<a>', {
+                    href: '#',
+                    "data-remodal-target": 'chest'
+                }));
             }
         }
     });
@@ -28,17 +32,18 @@ $(document).ready(function() {
     });
     $('.table-collapsible-header').nextUntil('tr.table-collapsible-header').hide();
 
-    if (!!Cookies.get('tutorial')) {
-        $('.tutorial').addClass('hidden');
-        Cookies.remove('tutorial');
-    } else {
-        $('body').chardinJs('start');
-        $('.tutorial').click(function() {
-            $('body').chardinJs('stop');
-        });
-        $('body').on('chardinJs:stop', function(){
-            Cookies.set('tutorial', 'completed', 36135);
-            $('.tutorial').fadeOut('slow').promise().addClass('hidden');
-        });
+    if(window.location.pathname === '/') {
+        if (!!Cookies.get('tutorial')) {
+            $('.tutorial').addClass('hidden');
+        } else {
+            $('body').chardinJs('start');
+            $('.tutorial').click(function () {
+                $('body').chardinJs('stop');
+            });
+            $('body').on('chardinJs:stop', function () {
+                Cookies.set('tutorial', 'completed', 36135);
+                $('.tutorial').fadeOut('slow').promise().addClass('hidden');
+            });
+        }
     }
 });

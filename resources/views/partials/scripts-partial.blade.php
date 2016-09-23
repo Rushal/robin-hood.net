@@ -3,3 +3,5 @@
 <script src="{{ asset('js/js.cookie.js') }}"></script>
 <script src="{{ asset('js/chardinjs.min.js') }}"></script>
 <script src="{{ asset('js/doc-ready.js') }}"></script>
+
+<script src="{{ asset('js/remodal.js') }}"></script>
