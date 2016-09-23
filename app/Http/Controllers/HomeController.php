@@ -25,4 +25,12 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function tutorial(Request $request)
+    {
+        if($request->ajax())
+        {
+            return response('Set cookie.')->withCookie(cookie('tutorial', 'Done', 2628000));
+        }
+    }
 }

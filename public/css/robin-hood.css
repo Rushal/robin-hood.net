@@ -1853,25 +1853,27 @@ nav .dropdown-button {
 .login-modal .tabs, .login .tabs {
   background-color: transparent; }
 
-.login-modal li :not(.active), .login li :not(.active) {
+.login-modal li :not(.active), .page li :not(.active) {
   background-color: #dddddd; }
 
-.login {
-  background-color: white;
-  padding: 20px 0 !important; }
-
-.forest {
+.forest, .tutorial {
+  background: transparent url(//dev.robin-hood.net/images/trees-fade-bg-1200.png) no-repeat;
+  background-size: 1200px 675px;
   width: 1200px;
   height: 675px;
   position: relative;
-  background: transparent url(//dev.robin-hood.net/images/trees-fade-bg.png) no-repeat;
-  background-size: 1200px 675px;
   margin: 0 auto;
   top: 0; }
 
 .forest-mobile {
+  background: transparent url(//dev.robin-hood.net/images/mobile-tall-bg.png) no-repeat;
+  background-size: 1200px 675px;
   display: none;
   padding-left: 50px; }
+
+.tutorial {
+  background: transparent url(../images/tutorial-1200.png) no-repeat;
+  z-index: 10000; }
 
 .treasure {
   position: absolute;
@@ -2127,15 +2129,23 @@ input, textarea {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg); }
 
+.card-title {
+  color: #1f3705; }
+
 @media (max-width: 1199px) {
   nav {
     padding: 0 5%; }
   nav ul a, nav a {
     font-size: 1.1rem; }
-  .forest {
+  .forest, .tutorial {
     width: 990px;
     height: 557px;
     background: transparent url(//dev.robin-hood.net/images/trees-fade-bg-1200.png) no-repeat;
+    background-size: 990px 557px; }
+  .tutorial {
+    width: 990px;
+    height: 557px;
+    background: transparent url(../images/tutorial-1200.png) no-repeat;
     background-size: 990px 557px; }
   .traveler-logo {
     max-height: 40px;
@@ -2156,11 +2166,13 @@ input, textarea {
     font-size: 4rem; } }
 
 @media (max-width: 991px) {
-  .forest {
+  .forest, .tutorial {
     width: 750px;
     height: 442px;
     background: transparent url(//dev.robin-hood.net/images/trees-fade-bg-768.png) no-repeat;
     background-size: 750px 442px; }
+  .tutorial {
+    background: transparent url(../images/tutorial-768.png) no-repeat; }
   .traveler-logo {
     max-height: 35px;
     width: auto;

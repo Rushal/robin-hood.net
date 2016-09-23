@@ -27,4 +27,18 @@ $(document).ready(function() {
         $(this).find(':last-child').toggleClass('arrow');
     });
     $('.table-collapsible-header').nextUntil('tr.table-collapsible-header').hide();
+
+    if (!!Cookies.get('tutorial')) {
+        $('.tutorial').addClass('hidden');
+        Cookies.remove('tutorial');
+    } else {
+        $('body').chardinJs('start');
+        $('.tutorial').click(function() {
+            $('body').chardinJs('stop');
+        });
+        $('body').on('chardinJs:stop', function(){
+            Cookies.set('tutorial', 'completed', 36135);
+            $('.tutorial').fadeOut('slow').promise().addClass('hidden');
+        });
+    }
 });

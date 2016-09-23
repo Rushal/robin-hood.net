@@ -1,17 +1,22 @@
 
-.forest {
+.forest, .tutorial {
+  background: transparent url(#{$images-path}trees-fade-bg-1200.png) no-repeat;
+  background-size: 1200px 675px;
   width: 1200px;
   height: 675px;
   position: relative;
-  background: transparent url(#{$images-path}trees-fade-bg.png) no-repeat;
-  background-size: 1200px 675px;
   margin: 0 auto;
   top: 0;
 }
-
 .forest-mobile {
+  background: transparent url(#{$images-path}mobile-tall-bg.png) no-repeat;
+  background-size: 1200px 675px;
   display: none;
   padding-left: 50px;
+}
+.tutorial {
+  background: transparent url(../images/tutorial-1200.png) no-repeat;
+  z-index: 10000;
 }
 
 .treasure {

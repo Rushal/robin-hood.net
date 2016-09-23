@@ -1,7 +1,13 @@
 @extends('layouts.primary-layout')
 
 @section('content')
+<!--<div class="tutorial">
+    <img src="{{ asset('images/tutorial-1200.png') }}"/>
+</div>-->
+
+
 <div class="forest">
+    <div class="tutorial"></div>
     <div class="planks">
         <div class="plank plank-1"><img src="images/ad_logos/fedex.png" class="traveler-logo"/></div>
         <div class="plank plank-2"><img src="images/ad_logos/citi.png" class="traveler-logo"/></div>

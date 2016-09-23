@@ -5,11 +5,6 @@
 .login-modal .tabs, .login .tabs {
   background-color: transparent;
 }
-.login-modal li :not(.active), .login li :not(.active) {
+.login-modal li :not(.active), .page li :not(.active) {
   background-color: #dddddd;
-}
-
-.login {
-  background-color: white;
-  padding: 20px 0 !important;
 }

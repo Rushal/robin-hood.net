@@ -7,12 +7,19 @@
     font-size: 1.1rem;
   }
 
-  .forest {
+  .forest, .tutorial {
     width: 990px;
     height: 557px;
     background: transparent url(#{$images-path}trees-fade-bg-1200.png) no-repeat;
     background-size: 990px 557px;
   }
+  .tutorial {
+    width: 990px;
+    height: 557px;
+    background: transparent url(../images/tutorial-1200.png) no-repeat;
+    background-size: 990px 557px;
+  }
+
   .traveler-logo
   {
     max-height: 40px;
@@ -42,11 +49,14 @@
 }
 
 @media (max-width:991px) {
-  .forest {
+  .forest, .tutorial {
     width: 750px;
     height: 442px;
     background: transparent url(#{$images-path}trees-fade-bg-768.png) no-repeat;
     background-size: 750px 442px;
+  }
+  .tutorial {
+    background: transparent url(../images/tutorial-768.png) no-repeat;
   }
   .traveler-logo
   {
