@@ -93,8 +93,11 @@
 }
 
 @media (max-width: 768px) {
+  .bg {
+    background: $primary-color url(#{$images-path}green-bg-768.jpg) no-repeat center center fixed;
+  }
   .home-bg {
-    background: url(#{$images-path}mobile-tall-bg.jpg) no-repeat center center;
+    background: $primary-color url(#{$images-path}mobile-tall-bg.jpg) no-repeat center center;
   }
 
   nav {
@@ -134,6 +137,9 @@
 }
 
 @media (max-width:456px) {
+  .bg {
+    background: $primary-color url(#{$images-path}green-bg-480.jpg) no-repeat center center fixed;
+  }
   .brand-logo img {
     width: 70% !important;
     height: auto;

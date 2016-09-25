@@ -7,7 +7,7 @@
 
         <hr class="page-hr"/>-->
         <div class="row">
-            <div class="login col s12 m6 offset-m3">
+            <div class="login col s12 m8 offset-m2">
                 <div class="card">
                     <div class="card-content">
                         <span class="card-title">Contact Us</span>

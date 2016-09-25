@@ -2042,8 +2042,7 @@ td, th {
 thead tr {
   background-color: transparent !important; }
 
-html, body {
-  background-color: #1f3705;
+body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold; }
 
@@ -2051,7 +2050,7 @@ input, textarea {
   color: #000; }
 
 .home-bg, .bg {
-  background: url(//dev.robin-hood.net/images/green-bg.jpg) no-repeat center center fixed;
+  background: #1f3705 url(//dev.robin-hood.net/images/green-bg.jpg) no-repeat center center fixed;
   background-size: cover !important;
   height: auto;
   min-height: 100%;
@@ -2210,9 +2209,10 @@ input, textarea {
     font-size: 3.5rem; } }
 
 @media (max-width: 768px) {
+  .bg {
+    background: #1f3705 url(//dev.robin-hood.net/images/green-bg-768.jpg) no-repeat center center fixed; }
   .home-bg {
-    background: url(//dev.robin-hood.net/images/mobile-tall-bg.jpg) no-repeat center center;
-    background-size: cover; }
+    background: #1f3705 url(//dev.robin-hood.net/images/mobile-tall-bg.jpg) no-repeat center center; }
   nav {
     background: transparent url(//dev.robin-hood.net/images/top-bar-sm.png) no-repeat 100% 100%;
     padding: 0; }
@@ -2237,6 +2237,8 @@ input, textarea {
     max-width: 90px; } }
 
 @media (max-width: 456px) {
+  .bg {
+    background: #1f3705 url(//dev.robin-hood.net/images/green-bg-480.jpg) no-repeat center center fixed; }
   .brand-logo img {
     width: 70% !important;
     height: auto; }
