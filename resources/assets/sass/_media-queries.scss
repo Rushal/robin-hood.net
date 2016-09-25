@@ -80,9 +80,6 @@
     height: 100px;
   }
 
-  .nav-login {
-    margin-top: 8px;
-  }
   .caret:before {
     left: 30%;
   }
@@ -99,9 +96,6 @@
   }
   .bg {
     background: $primary-color url(#{$images-path}green-bg-768.jpg) no-repeat center center fixed;
-  }
-  .home-bg {
-    background: $primary-color url(#{$images-path}mobile-bg.jpg) no-repeat center bottom;
   }
 
   nav {
@@ -142,18 +136,38 @@
 
 // Phone landscape
 @media (max-width: 768px) and (max-height: 500px) {
-  .home-bg {
-    background: $primary-color url(#{$images-path}mobile-bg-landscape.jpg) no-repeat center bottom fixed;
-    background-size: 800px 479px;
+  .forest-mobile {
+    background: $primary-color url(#{$images-path}mobile-bg-landscape.jpg) no-repeat center bottom;
   }
   .plank-mobile {
     background-size: 140px 99px;
     float: left;
     height: 99px;
-    margin-bottom: 5px;
+    margin: 0 25px 0 30px;
     opacity: 1;
     position: relative;
     width: 140px;
+  }
+  .plank-mobile.landscape-1 {
+    background-size: 90px 64px;
+    height: 64px;
+    margin: 3% 0 0 13%;
+    width: 90px;
+  }
+  .landscape-1 .traveler-logo, .landscape-2 .traveler-logo {
+    max-height: 70px !important;
+    max-width: 70px !important;
+  }
+
+  .plank-mobile.landscape-2 {
+    background-size: 120px 85px;
+    height: 85px;
+    margin: 12% 0 0 -4%;
+    width: 120px;
+  }
+
+  .plank-mobile.landscape-3 {
+    margin: -24% 0 0 62%;
   }
 }
 

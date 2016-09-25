@@ -1799,7 +1799,7 @@ $fonts-path: '//localhost:8000/fonts/';*/
 nav {
   background: transparent url(//dev.robin-hood.net/images/top-bar.png) no-repeat 100% 100%;
   background-size: cover;
-  height: 110px;
+  height: 95px;
   box-shadow: none;
   padding: 0 10%;
   color: #1f3705; }
@@ -1815,12 +1815,6 @@ nav ul a.active {
 nav ul a:hover, nav ul a.active:hover, .side-nav a.logo:hover {
   background-color: transparent;
   color: #7aab05; }
-
-nav .button-collapse {
-  top: 5%; }
-
-.brand-logo {
-  top: 6%; }
 
 .side-nav a {
   font-size: 1.3rem;
@@ -1868,10 +1862,8 @@ nav .dropdown-button {
   top: 0; }
 
 .forest-mobile {
-  background: transparent url(//dev.robin-hood.net/images/mobile-tall-bg.png) no-repeat;
-  background-size: 1200px 675px;
-  display: none;
-  padding-left: 50px; }
+  background: transparent url(//dev.robin-hood.net/images/mobile-bg.png) no-repeat;
+  display: none; }
 
 .tutorial {
   background: transparent url(../images/tutorial-1200.png) no-repeat;
@@ -2139,8 +2131,9 @@ input, textarea {
 .card-title {
   color: #1f3705; }
 
-.mobile-carousel .carousel.carousel-slider {
-  height: 70vh !important; }
+.mobile-carousel.carousel.carousel-slider {
+  height: 100vh !important;
+  max-height: 100%; }
 
 .remodal-overlay {
   background: rgba(0, 0, 0, 0.6); }
@@ -2205,8 +2198,6 @@ input, textarea {
   .treasure img {
     width: 175px;
     height: 100px; }
-  .nav-login {
-    margin-top: 8px; }
   .caret:before {
     left: 30%; }
   .page-title-2 {
@@ -2218,8 +2209,6 @@ input, textarea {
     min-height: 100%; }
   .bg {
     background: #1f3705 url(//dev.robin-hood.net/images/green-bg-768.jpg) no-repeat center center fixed; }
-  .home-bg {
-    background: #1f3705 url(//dev.robin-hood.net/images/mobile-bg.jpg) no-repeat center bottom; }
   nav {
     background: transparent url(//dev.robin-hood.net/images/top-bar-sm.png) no-repeat 100% 100%;
     padding: 0; }
@@ -2244,17 +2233,31 @@ input, textarea {
     max-width: 90px; } }
 
 @media (max-width: 768px) and (max-height: 500px) {
-  .home-bg {
-    background: #1f3705 url(//dev.robin-hood.net/images/mobile-bg-landscape.jpg) no-repeat center bottom fixed;
-    background-size: 800px 479px; }
+  .forest-mobile {
+    background: #1f3705 url(//dev.robin-hood.net/images/mobile-bg-landscape.jpg) no-repeat center bottom; }
   .plank-mobile {
     background-size: 140px 99px;
     float: left;
     height: 99px;
-    margin-bottom: 5px;
+    margin: 0 25px 0 30px;
     opacity: 1;
     position: relative;
-    width: 140px; } }
+    width: 140px; }
+  .plank-mobile.landscape-1 {
+    background-size: 90px 64px;
+    height: 64px;
+    margin: 3% 0 0 13%;
+    width: 90px; }
+  .landscape-1 .traveler-logo, .landscape-2 .traveler-logo {
+    max-height: 70px !important;
+    max-width: 70px !important; }
+  .plank-mobile.landscape-2 {
+    background-size: 120px 85px;
+    height: 85px;
+    margin: 12% 0 0 -4%;
+    width: 120px; }
+  .plank-mobile.landscape-3 {
+    margin: -24% 0 0 62%; } }
 
 @media (max-width: 456px) {
   .bg {

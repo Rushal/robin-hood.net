@@ -112,6 +112,7 @@ input, textarea {
   color: $primary-color;
 }
 
-.mobile-carousel .carousel.carousel-slider {
-  height: 70vh !important;
+.mobile-carousel.carousel.carousel-slider {
+  height: 100vh !important;
+  max-height: 100%;
 }

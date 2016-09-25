@@ -3,7 +3,7 @@
 nav {
   background: transparent url(#{$images-path}top-bar.png) no-repeat 100% 100%;
   background-size: cover;
-  height: 110px;
+  height: 95px;
   box-shadow: none;
   padding: 0 10%;
   color: $primary-color;
@@ -22,14 +22,6 @@ nav ul a.active {
 nav ul a:hover, nav ul a.active:hover, .side-nav a.logo:hover {
   background-color: transparent;
   color: $link-hover;
-}
-
-nav .button-collapse {
-  top: 5%;
-}
-
-.brand-logo {
-  top: 6%;
 }
 
 .side-nav a {

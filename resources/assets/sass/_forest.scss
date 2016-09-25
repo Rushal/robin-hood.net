@@ -9,10 +9,8 @@
   top: 0;
 }
 .forest-mobile {
-  background: transparent url(#{$images-path}mobile-tall-bg.png) no-repeat;
-  background-size: 1200px 675px;
+  background: transparent url(#{$images-path}mobile-bg.png) no-repeat;
   display: none;
-  padding-left: 50px;
 }
 .tutorial {
   background: transparent url(../images/tutorial-1200.png) no-repeat;
