@@ -5,12 +5,16 @@ $(document).ready(function() {
         closeOnClick: true
     });
 
+
+    // Login modal
     $('.modal-trigger').leanModal({
         ready: function () {
            $('ul.tabs').tabs();
         }
     });
 
+
+    // Desktop planks
     var planks = 0;
     $(".plank").hover( function () {
         if($(this).css('opacity') == 0) {
@@ -26,12 +30,19 @@ $(document).ready(function() {
         }
     });
 
+
+    $('.carousel.carousel-slider').carousel({full_width: true});
+
+
+    // Bookkeeping collapse
     $('.table-collapsible-header').click(function(){
         $(this).nextUntil('tr.table-collapsible-header').toggle();
         $(this).find(':last-child').toggleClass('arrow');
     });
     $('.table-collapsible-header').nextUntil('tr.table-collapsible-header').hide();
 
+
+    // Tutorial
     if(window.location.pathname === '/') {
         if (!!Cookies.get('tutorial')) {
             $('.tutorial').addClass('hidden');
@@ -46,4 +57,10 @@ $(document).ready(function() {
             });
         }
     }
+
+    // Chest modal
+    var inst = $('[data-remodal-id=chest]').remodal();
+    $('.remodal').click(function () {
+        inst.close();
+    });
 });

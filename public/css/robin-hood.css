@@ -2210,6 +2210,9 @@ input, textarea {
     font-size: 3.5rem; } }
 
 @media (max-width: 768px) {
+  html, body {
+    height: 100%;
+    min-height: 100%; }
   .bg {
     background: #1f3705 url(//dev.robin-hood.net/images/green-bg-768.jpg) no-repeat center center fixed; }
   .home-bg {

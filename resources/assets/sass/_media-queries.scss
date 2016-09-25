@@ -93,6 +93,10 @@
 }
 
 @media (max-width: 768px) {
+  html, body {
+    height: 100%;
+    min-height: 100%;
+  }
   .bg {
     background: $primary-color url(#{$images-path}green-bg-768.jpg) no-repeat center center fixed;
   }
