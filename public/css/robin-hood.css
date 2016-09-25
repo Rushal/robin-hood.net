@@ -2216,7 +2216,7 @@ input, textarea {
   .bg {
     background: #1f3705 url(//dev.robin-hood.net/images/green-bg-768.jpg) no-repeat center center fixed; }
   .home-bg {
-    background: #1f3705 url(//dev.robin-hood.net/images/mobile-tall-bg.jpg) no-repeat center center; }
+    background: #1f3705 url(//dev.robin-hood.net/images/mobile-bg.jpg) no-repeat center bottom; }
   nav {
     background: transparent url(//dev.robin-hood.net/images/top-bar-sm.png) no-repeat 100% 100%;
     padding: 0; }
