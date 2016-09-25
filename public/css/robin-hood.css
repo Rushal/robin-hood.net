@@ -2271,8 +2271,8 @@ input, textarea {
     transform: rotate(-5deg); }
   .treasure-mobile.landscape {
     height: 150px;
-    margin-left: 15px;
-    top: 50vh;
+    margin-left: 45px;
+    top: 40vh;
     width: 335px; } }
 
 @media (max-width: 600px) {
