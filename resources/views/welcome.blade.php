@@ -46,28 +46,70 @@
             <div class="carousel-item">
                 <div class="plank-mobile"><img src="{{ asset('images/ad_logos/fedex.png') }}" class="traveler-logo"/></div>
             </div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/citi.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/dell.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/cheveron.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/citi.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/dell.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/fedex.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/citi.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/cheveron.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/dell.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/fedex.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/citi.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/cheveron.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/fedex.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/dell.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/cheveron.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/citi.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/fedex.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/cheveron.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/dell.png') }}" class="traveler-logo"/></div>
-            <div class="carousel-item plank-mobile"><img src="{{ asset('images/ad_logos/citi.png') }}" class="traveler-logo"/></div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/dell.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/citi.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/cheveron.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/citi.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/dell.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/fedex.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/citi.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/cheveron.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/fedex.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/dell.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/citi.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/fedex.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/cheveron.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/dell.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/citi.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/fedex.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/dell.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/citi.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/cheveron.png') }}" class="traveler-logo"/></div>
+            </div>
+            <div class="carousel-item">
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/fedex.png') }}" class="traveler-logo"/></div>
+            </div>
 
-            <div class="carousel-item treasure-mobile"><img src="{{ asset('images/chest.png') }}" alt=""/></div>
+            <div class="carousel-item">
+                <div class="treasure-mobile"><img src="{{ asset('images/chest.png') }}" alt=""/></div>
+            </div>
         </div>
     </div>
 </div>
