@@ -14,8 +14,7 @@
                         <tr>
                             <th data-field="date">DATE</th>
                             <th data-field="description">DESCRIPTION</th>
-                            <!--<th data-field="debit">DEBIT</th>-->
-                            <th data-field="credit">Debit / Credit</th>
+                            <th data-field="credit">DEBIT / CREDIT</th>
                             <th data-field="balance">BALANCE</th>
                         </tr>
                     </thead>
@@ -26,7 +25,6 @@
                                 <tr class="table-collapsible-header">
                                     <td>{{ $transactionYear->transaction_year }}</td>
                                     <td>CLICK TO EXPAND</td>
-                                    <!--<td></td>-->
                                     <td></td>
                                     <td class="arrow"><i class="material-icons">&#xE5C5;</i></td>
                                 </tr>
@@ -39,9 +37,8 @@
                                             class="red darken-2"
                                             @endif
                                     >
-                                        <td>{{ $transaction->transaction_date }}</td>
-                                        <td>${{ $transaction->description }}</td>
-                                        <!--<td></td>-->
+                                        <td>{{ $transaction->transaction_date->format('Y-m-d') }}</td>
+                                        <td>{{ $transaction->description }}</td>
                                         <td>${{ round($transaction->amount, 2) }}</td>
                                         <td>${{ $transaction->balance }}</td>
                                     </tr>

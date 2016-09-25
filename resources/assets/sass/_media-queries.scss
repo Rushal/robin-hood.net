@@ -94,7 +94,7 @@
 
 @media (max-width: 768px) {
   .home-bg {
-    background: url(#{$images-path}mobile-bg.jpg) no-repeat center 0 fixed;
+    background: url(#{$images-path}mobile-tall-bg.jpg) no-repeat center center;
   }
 
   nav {

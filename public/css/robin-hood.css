@@ -1883,7 +1883,7 @@ nav .dropdown-button {
 
 .treasure-mobile {
   left: -20%;
-  top: 200px;
+  top: 50px;
   position: relative; }
 
 .treasure img {
@@ -1922,7 +1922,7 @@ nav .dropdown-button {
 .plank-mobile {
   background-size: 140px 99px;
   height: 99px;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
   opacity: 1;
   position: relative;
   width: 140px; }
@@ -2042,7 +2042,7 @@ td, th {
 thead tr {
   background-color: transparent !important; }
 
-body {
+html, body {
   background-color: #1f3705;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold; }
@@ -2211,7 +2211,8 @@ input, textarea {
 
 @media (max-width: 768px) {
   .home-bg {
-    background: url(//dev.robin-hood.net/images/mobile-bg.jpg) no-repeat center 0 fixed; }
+    background: url(//dev.robin-hood.net/images/mobile-tall-bg.jpg) no-repeat center center;
+    background-size: cover; }
   nav {
     background: transparent url(//dev.robin-hood.net/images/top-bar-sm.png) no-repeat 100% 100%;
     padding: 0; }
