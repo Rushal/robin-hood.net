@@ -1,4 +1,6 @@
 /_CreationFiles
+/app/Http/Controllers/ImportBookkeepingController.php
+/resources/views/importExport.blade.php
 /node_modules
 /public/storage
 /vendor
