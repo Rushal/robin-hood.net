@@ -2139,6 +2139,9 @@ input, textarea {
 .card-title {
   color: #1f3705; }
 
+.mobile-carousel .carousel {
+  height: 70vh; }
+
 .remodal-overlay {
   background: rgba(0, 0, 0, 0.6); }
 
