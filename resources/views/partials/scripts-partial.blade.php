@@ -8,6 +8,8 @@
 
 @if(\Agent::isMobile() && \Request::is('/'))
     <script>
-        window.scrollTo(0,1);
+        $(document).ready(function() {
+            window.scrollTo(0, 1);
+        });
     </script>
 @endif
