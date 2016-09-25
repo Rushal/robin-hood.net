@@ -140,6 +140,7 @@
 @media (max-width: 768px) and (max-height: 500px) {
   .home-bg {
     background: $primary-color url(#{$images-path}mobile-bg-landscape.jpg) no-repeat center bottom fixed;
+    background-size: 800px 479px;
   }
   .plank-mobile {
     background-size: 140px 99px;
@@ -155,6 +156,7 @@
 @media (max-width:456px) {
   .bg {
     background: $primary-color url(#{$images-path}green-bg-480.jpg) no-repeat center center fixed;
+    background-size: 480px 1080px;
   }
   .brand-logo img {
     width: 70% !important;
