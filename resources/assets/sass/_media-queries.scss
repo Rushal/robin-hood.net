@@ -188,9 +188,15 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (orientation: portrait) and (max-width: 600px) {
   .forest-mobile {
+    background: $primary-color url(#{$images-path}mobile-bg.jpg) no-repeat center bottom;
+    background-size: 100vw 100vh;
+    overflow: hidden;
     margin-top: -56px;
+  }
+  .carousel-item {
+    margin-top: 60px;
   }
 }
 

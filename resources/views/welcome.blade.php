@@ -32,7 +32,7 @@
 
 <div class="forest-mobile">
     <div>
-        <div class="mobile-carousel carousel carousel-slider center">
+        <div class="mobile-carousel carousel carousel-slider">
             <div class="carousel-item">
                 <div class="plank-mobile landscape-1"><img src="{{ asset('images/ad_logos/fedex.png') }}" class="traveler-logo"/></div>
                 <div class="plank-mobile landscape-2"><img src="{{ asset('images/ad_logos/dell.png') }}" class="traveler-logo"/></div>
@@ -70,7 +70,7 @@
             </div>
 
             <div class="carousel-item">
-                <div class="treasure-mobile landscape"><img src="{{ asset('images/chest.png') }}" alt=""/></div>
+                <div class="treasure-mobile landscape"><a href="#" data-remodal-target="chest"><img src="{{ asset('images/chest.png') }}" alt=""/></a></div>
             </div>
         </div>
     </div>
