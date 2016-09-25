@@ -45,6 +45,8 @@
         <div class="carousel carousel-slider center">
             <div class="carousel-item">
                 <div class="plank-mobile"><img src="{{ asset('images/ad_logos/fedex.png') }}" class="traveler-logo"/></div>
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/dell.png') }}" class="traveler-logo"/></div>
+                <div class="plank-mobile"><img src="{{ asset('images/ad_logos/citi.png') }}" class="traveler-logo"/></div>
             </div>
             <div class="carousel-item">
                 <div class="plank-mobile"><img src="{{ asset('images/ad_logos/dell.png') }}" class="traveler-logo"/></div>
