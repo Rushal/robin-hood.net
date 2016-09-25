@@ -10,7 +10,7 @@ input, textarea {
 .home-bg, .bg {
   background: $primary-color url(#{$images-path}green-bg.jpg) no-repeat center center fixed;
   background-size: cover !important;
-  height: auto;
+  //height: auto;
   min-height: 100%;
   width: 100%;
 }
@@ -113,6 +113,6 @@ input, textarea {
 }
 
 .mobile-carousel.carousel.carousel-slider {
-  height: 100% !important;
+  height: 100vh !important;
   max-height: 100%;
 }

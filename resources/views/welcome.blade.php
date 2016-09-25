@@ -41,7 +41,7 @@
 
 <!-- Old mobile-->
 <div class="forest-mobile">
-    <div class="row">
+    <div>
         <div class="mobile-carousel carousel carousel-slider center">
             <div class="carousel-item">
                 <div class="plank-mobile landscape-1"><img src="{{ asset('images/ad_logos/fedex.png') }}" class="traveler-logo"/></div>
@@ -80,7 +80,7 @@
             </div>
 
             <div class="carousel-item">
-                <div class="treasure-mobile"><img src="{{ asset('images/chest.png') }}" alt=""/></div>
+                <div class="treasure-mobile landscape"><img src="{{ asset('images/chest.png') }}" alt=""/></div>
             </div>
         </div>
     </div>
