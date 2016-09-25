@@ -20,9 +20,9 @@ Route::get('/how-it-works', function () {
 Route::get('/history', function () {
     return view('history');
 });
-Route::get('/bookkeeping', function () {
-    return view('bookkeeping');
-});
+
+Route::get('/bookkeeping', 'TransactionsController@index');
+
 Route::get('/contact', function () {
     return view('contact');
 });
@@ -32,3 +32,7 @@ Route::get('/chest-click', function () {
 });
 
 Auth::routes();
+
+Route::get('/importExport', 'ImportBookkeepingController@importExport');
+Route::get('/downloadExcel/{type}', 'ImportBookkeepingController@downloadExcel');
+Route::post('/importExcel', 'ImportBookkeepingController@importExcel');
