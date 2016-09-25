@@ -5,11 +5,3 @@
 <script src="{{ asset('js/doc-ready.js') }}"></script>
 
 <script src="{{ asset('js/remodal.js') }}"></script>
-
-@if(\Agent::isMobile() && \Request::is('/'))
-    <script>
-        $(document).ready(function() {
-            window.scrollTo(0, 1);
-        });
-    </script>
-@endif
