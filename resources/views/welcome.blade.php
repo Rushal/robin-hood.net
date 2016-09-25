@@ -30,16 +30,6 @@
     </div>
 </div>
 
-<!--<div class="container forest-mobile">
-    <div class="carousel carousel-slider">
-        <a class="carousel-item" href="#one!"><img src="{{ asset('images/trees-bg.jpg') }}"></a>
-        <a class="carousel-item" href="#two!"><img src="{{ asset('images/ad_logos/fedex.png') }}"></a>
-        <a class="carousel-item" href="#three!"><img src="{{ asset('images/ad_logos/fedex.png') }}"></a>
-        <a class="carousel-item" href="#four!"><img src="{{ asset('images/ad_logos/fedex.png') }}"></a>
-    </div>
-</div>-->
-
-<!-- Old mobile-->
 <div class="forest-mobile">
     <div>
         <div class="mobile-carousel carousel carousel-slider center">
