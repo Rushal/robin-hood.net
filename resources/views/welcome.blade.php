@@ -32,7 +32,7 @@
 
 <div class="container forest-mobile">
     <div class="row">
-        <div class="col s6 offset-s4">
+        <div class="col s11 offset-s1">
             <div class="plank-mobile"><img src="images/ad_logos/fedex.png" class="traveler-logo"/></div>
             <div class="plank-mobile"><img src="images/ad_logos/citi.png" class="traveler-logo"/></div>
             <div class="plank-mobile"><img src="images/ad_logos/dell.png" class="traveler-logo"/></div>
