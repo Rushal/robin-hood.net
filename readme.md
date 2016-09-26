@@ -3,12 +3,17 @@
 Initial git for work on the site.
 
 	TODO:
-		Starter pages that show how the site works
-		Page for clicking on the treasure chest
 		Transfer static page data to database
+		    How it works (may not be worth it)
+		    History
 		Choose a payment processor and integrate
 		Integrate OAUTH?
-		Mobile design is lacking currently
+		Remove Excel import pages and services
+		
+		Remap CSS for mobile-first
+		Consolidate CSS
+		Consolidate JS and Plugins
+		SASS-ify CSS
 		
 	
 	Dashboard
@@ -23,3 +28,10 @@ Initial git for work on the site.
 		Travelers
 			Need to work on what will need to be seen and gathered from the account
 		
+		
+		
+		Done?
+		    Starter pages that show how the site works
+		    Page for clicking on the treasure chest
+		    Mobile design is lacking currently - complete
+		    Bookkeeping in database

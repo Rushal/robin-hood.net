@@ -74,11 +74,11 @@
 }
 
 .plank-mobile {
-  @extend .plank;
+  background: url(#{$images-path}plank.png) no-repeat;
   background-size: 140px 99px;
   height: 99px;
   margin: 30px auto;
-  opacity: 1;
+  opacity: 1 !important;
   position: relative;
   width: 140px;
 }

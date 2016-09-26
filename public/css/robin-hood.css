@@ -1906,7 +1906,7 @@ nav {
   top: 0;
   width: 100%; }
 
-.plank, .plank-mobile {
+.plank {
   background: url(//dev.robin-hood.net/images/plank.png) no-repeat;
   background-size: 104px 73px;
   height: 73px;
@@ -1915,10 +1915,11 @@ nav {
   opacity: 0; }
 
 .plank-mobile {
+  background: url(//dev.robin-hood.net/images/plank.png) no-repeat;
   background-size: 140px 99px;
   height: 99px;
   margin: 30px auto;
-  opacity: 1;
+  opacity: 1 !important;
   position: relative;
   width: 140px; }
 
@@ -2173,7 +2174,7 @@ input, textarea {
     max-height: 110px;
     width: auto;
     max-width: 110px; }
-  .plank, .plank-mobile {
+  .plank {
     background-size: 184px 130px;
     height: 130px;
     width: 184px;
@@ -2203,7 +2204,7 @@ input, textarea {
     max-height: 40px;
     width: auto;
     max-width: 70px; }
-  .plank, .plank-mobile {
+  .plank {
     background-size: 90px 54px;
     height: 54px;
     width: 90px;
@@ -2229,7 +2230,7 @@ input, textarea {
     max-height: 35px;
     width: auto;
     max-width: 50px; }
-  .plank, .plank-mobile {
+  .plank {
     background-size: 80px 57px;
     height: 57px;
     width: 80px;
