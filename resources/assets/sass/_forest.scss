@@ -75,6 +75,16 @@
   width: 140px;
 }
 
+.plank-mobile.landscape-1 {
+  transform: rotate(4deg);
+}
+.plank-mobile.landscape-2 {
+  transform: rotate(-10deg);
+}
+.plank-mobile.landscape-3 {
+  transform: rotate(-5deg);
+}
+
 .plank-1, .plank-2, .plank-3, .plank-4, .plank-5, .plank-6 { left: 16%; }
 .plank-7, .plank-8, .plank-9, .plank-10, .plank-11 { left: 27%; }
 .plank-12, .plank-13, .plank-14, .plank-15, .plank-16 { left: 63%; }

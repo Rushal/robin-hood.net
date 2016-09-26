@@ -68,12 +68,16 @@ $(document).ready(function() {
         if (!!Cookies.get('mobile_tutorial')) {
             Cookies.remove('mobile_tutorial');
         } else {
-            $('.carousel').addClass('hidden');
+            $('.owl-wrapper .owl-item').each(function() {
+                $(this).addClass('hidden');
+            });
             var mobileTutorial = $('[data-remodal-id=mobile-tutorial]').remodal({hashTracking: false});
             mobileTutorial.open();
 
             $(document).on('closing', '.remodal', function () {
-                $('.carousel').removeClass('hidden');
+                $('.owl-wrapper .owl-item').each(function() {
+                    $(this).removeClass('hidden');
+                });
                 Cookies.set('mobile_tutorial', 'completed', 36135);
             });
         }

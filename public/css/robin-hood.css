@@ -1921,6 +1921,18 @@ nav .dropdown-button {
   position: relative;
   width: 140px; }
 
+.plank-mobile.landscape-1 {
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg); }
+
+.plank-mobile.landscape-2 {
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg); }
+
+.plank-mobile.landscape-3 {
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg); }
+
 .plank-1, .plank-2, .plank-3, .plank-4, .plank-5, .plank-6 {
   left: 16%; }
 
