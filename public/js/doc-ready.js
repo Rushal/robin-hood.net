@@ -30,12 +30,17 @@ $(document).ready(function() {
         }
     });
 
-
-    $('.carousel.carousel-slider').carousel({
+    $('.carousel-slider').carousel({
         full_width: true,
         no_wrap: true
     });
-
+    $(window).resize(function() {
+        $('.mobile-carousel').removeClass('initialized');
+        $('.carousel-slider').carousel({
+            full_width: true,
+            no_wrap: true
+        });
+    });
 
     // Bookkeeping collapse
     $('.table-collapsible-header').click(function(){

@@ -7440,8 +7440,6 @@ Picker.extend( 'pickadate', DatePicker )
 
       });
 
-
-
     },
     next : function(n) {
       $(this).trigger('carouselNext', [n]);
