@@ -5,3 +5,4 @@
 <script src="{{ asset('js/doc-ready.js') }}"></script>
 
 <script src="{{ asset('js/remodal.js') }}"></script>
+<script src="{{ asset('js/owl.carousel.js') }}"></script>

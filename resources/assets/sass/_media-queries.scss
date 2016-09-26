@@ -136,13 +136,6 @@
     max-width: 90px;
   }
 
-  .carousel-item {
-    margin-top: 60px;
-  }
-
- .carousel .carousel-item img{
-    width: auto !important;
-  }
 }
 
 // Phone landscape
@@ -194,8 +187,26 @@
   .treasure-mobile.landscape {
     height: 150px;
     margin-left: 45px;
-    top: 33vh;
+    top: 40vh;
     width: 335px;
+  }
+
+  #mobile-carousel-home .item {
+    margin-top: 0;
+  }
+}
+
+@media (max-width:600px) {
+  .forest-mobile {
+    margin-top: -56px;
+  }
+  .treasure-mobile {
+    margin-left: 15vw;
+    top: 60vh;
+  }
+  .treasure-mobile  img {
+    width: 300px;
+    height: 172px;
   }
 }
 

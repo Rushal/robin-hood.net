@@ -30,16 +30,11 @@ $(document).ready(function() {
         }
     });
 
-    $('.carousel-slider').carousel({
-        full_width: true,
-        no_wrap: true
-    });
-    $(window).resize(function() {
-        $('.mobile-carousel').removeClass('initialized');
-        $('.carousel-slider').carousel({
-            full_width: true,
-            no_wrap: true
-        });
+    $("#mobile-carousel-home").owlCarousel({
+        navigation : false,
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem:true
     });
 
     // Bookkeeping collapse
@@ -74,7 +69,7 @@ $(document).ready(function() {
             Cookies.remove('mobile_tutorial');
         } else {
             $('.carousel').addClass('hidden');
-            var mobileTutorial = $('[data-remodal-id=mobile-tutorial]').remodal();
+            var mobileTutorial = $('[data-remodal-id=mobile-tutorial]').remodal({hashTracking: false});
             mobileTutorial.open();
 
             $(document).on('closing', '.remodal', function () {
@@ -86,7 +81,7 @@ $(document).ready(function() {
 
 
     // Chest modal
-    var chest = $('[data-remodal-id=chest]').remodal();
+    var chest = $('[data-remodal-id=chest]').remodal({hashTracking: false});
     $('.remodal').click(function () {
         chest.close();
         mobileTutorial.close();
