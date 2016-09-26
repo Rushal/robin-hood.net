@@ -139,6 +139,10 @@
   .carousel-item {
     margin-top: 60px;
   }
+
+ .carousel .carousel-item img{
+    width: auto !important;
+  }
 }
 
 // Phone landscape
@@ -190,7 +194,7 @@
   .treasure-mobile.landscape {
     height: 150px;
     margin-left: 45px;
-    top: 40vh;
+    top: 33vh;
     width: 335px;
   }
 }
