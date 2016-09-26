@@ -76,6 +76,8 @@
     </div>
 </div>
 
+
+
 <div class="remodal remodal-chest" data-remodal-id="chest" data-remodal-options="hashTracking: false">
     <div class="row">
         <img src="{{ asset('images/bow.png') }}"/>
@@ -93,6 +95,22 @@
             <span style="color: #9fce1d;">$776,235</span>
             <div class="page-sub-title">THE WORLD THANKS YOU.<br/>ENJOY YOUR PERFECT DAY!</div>
         </div>
+    </div>
+
+    <div class="row rotate-180">
+        <img src="{{ asset('images/bow.png') }}"/>
+    </div>
+</div>
+
+
+
+<div class="remodal remodal-mobile-tutorial" data-remodal-id="mobile-tutorial" data-remodal-options="hashTracking: false">
+    <div class="row">
+        <img src="{{ asset('images/bow.png') }}"/>
+    </div>
+
+    <div class="row">
+        <img src="{{ asset('images/mobile-tutorial.png') }}" width="100%" height="auto"/>
     </div>
 
     <div class="row rotate-180">

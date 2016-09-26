@@ -7173,7 +7173,7 @@ Picker.extend( 'pickadate', DatePicker )
               ' translateX(' + (dir * options.shift * tween * i) + 'px)' +
               ' translateZ(' + (options.dist * tween) + 'px)';
             el.style.zIndex = 0;
-            if (options.full_width) { /*tweenedOpacity = 1;*/ tweenedOpacity = 1 - 0.8 * tween; }
+            if (options.full_width) { tweenedOpacity = 1; }
             else { tweenedOpacity = 1 - 0.2 * tween; }
             el.style.opacity = tweenedOpacity;
             el.style.display = 'block';
@@ -7182,10 +7182,8 @@ Picker.extend( 'pickadate', DatePicker )
           for (i = 1; i <= half; ++i) {
             // right side
             if (options.full_width) {
-              //zTranslation = options.dist;
-              //tweenedOpacity = (i === half && delta < 0) ? 1 - tween : 1;
-                zTranslation = options.dist * (i * 2 + tween * dir);
-                tweenedOpacity = 1 - 0.6 * (i * 2 + tween * dir);
+              zTranslation = options.dist;
+              tweenedOpacity = (i === half && delta < 0) ? 1 - tween : 1;
             } else {
               zTranslation = options.dist * (i * 2 + tween * dir);
               tweenedOpacity = 1 - 0.2 * (i * 2 + tween * dir);
@@ -7204,10 +7202,8 @@ Picker.extend( 'pickadate', DatePicker )
 
             // left side
             if (options.full_width) {
-              //zTranslation = options.dist;
-              //tweenedOpacity = (i === half && delta > 0) ? 1 - tween : 1;
-                zTranslation = options.dist * (i * 2 - tween * dir);
-                tweenedOpacity = 1 - 0.6 * (i * 2 - tween * dir);
+              zTranslation = options.dist;
+              tweenedOpacity = (i === half && delta > 0) ? 1 - tween : 1;
             } else {
               zTranslation = options.dist * (i * 2 - tween * dir);
               tweenedOpacity = 1 - 0.2 * (i * 2 - tween * dir);

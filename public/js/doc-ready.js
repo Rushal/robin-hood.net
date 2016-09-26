@@ -61,9 +61,27 @@ $(document).ready(function() {
         }
     }
 
+    // Tutorial Mobile
+    if(window.location.pathname === '/') {
+        if (!!Cookies.get('mobile_tutorial')) {
+            Cookies.remove('mobile_tutorial');
+        } else {
+            $('.carousel').addClass('hidden');
+            var mobileTutorial = $('[data-remodal-id=mobile-tutorial]').remodal();
+            mobileTutorial.open();
+
+            $(document).on('closing', '.remodal', function (e) {
+                $('.carousel').removeClass('hidden');
+                Cookies.set('mobile_tutorial', 'completed', 36135);
+            });
+        }
+    }
+
+
     // Chest modal
-    var inst = $('[data-remodal-id=chest]').remodal();
+    var chest = $('[data-remodal-id=chest]').remodal();
     $('.remodal').click(function () {
-        inst.close();
+        chest.close();
+        mobileTutorial.close();
     });
 });
