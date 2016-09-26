@@ -1,4 +1,46 @@
 
+@media (min-width:1921px) {
+  nav {
+    height: 110px;
+  }
+  .forest, .tutorial {
+    width: 1920px;
+    height: 1080px;
+    background: transparent url(#{$images-path}trees-fade-bg-1200.png) no-repeat;
+    background-size: 1920px 1080px;
+  }
+  .tutorial {
+    width: 1920px;
+    height: 1080px;
+    background: transparent url(../images/tutorial-1200.png) no-repeat;
+    background-size: 1920px 1080px;
+  }
+
+  .traveler-logo
+  {
+    max-height: 110px;
+    width: auto;
+    max-width: 110px;
+  }
+  .plank
+  {
+    background-size: 184px 130px;
+    height: 130px;
+    width: 184px;
+    opacity: 0;
+  }
+
+  .treasure  img {
+    width: 451px;
+    height: 258px;
+  }
+
+  p, h5, ul {
+    font-size: 2rem !important;
+  }
+}
+
+
 @media (max-width:1199px) {
   nav {
     padding: 0 5%;
@@ -78,10 +120,6 @@
   .treasure img {
     width: 175px;
     height: 100px;
-  }
-
-  .caret:before {
-    left: 30%;
   }
 
   .page-title-2 {

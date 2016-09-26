@@ -1803,16 +1803,19 @@ nav {
   box-shadow: none;
   padding: 0 10%;
   color: #1f3705; }
+  nav a, nav ul a {
+    color: #1f3705;
+    font-weight: 700;
+    font-size: 1.2rem; }
+  nav ul a.active, nav ul .side-nav a:hover, .side-nav nav ul a:hover {
+    color: #668809; }
+  nav ul a:hover, nav ul a.active:hover, nav ul .side-nav a:hover, .side-nav nav ul a:hover {
+    background-color: transparent;
+    color: #7aab05; }
+  nav .dropdown-button {
+    height: 50px; }
 
-nav ul a, nav a {
-  color: #1f3705;
-  font-weight: 700;
-  font-size: 1.2rem; }
-
-nav ul a.active {
-  color: #668809; }
-
-nav ul a:hover, nav ul a.active:hover, .side-nav a.logo:hover {
+.side-nav a.logo:hover {
   background-color: transparent;
   color: #7aab05; }
 
@@ -1820,15 +1823,12 @@ nav ul a:hover, nav ul a.active:hover, .side-nav a.logo:hover {
   font-size: 1.3rem;
   font-weight: bold; }
 
-.side-nav a.active, .side-nav a:hover {
+.side-nav a.active, .side-nav a:hover, .side-nav nav ul a.active:hover, nav ul .side-nav a.active:hover {
   background-color: rgba(0, 0, 0, 0.2);
   color: #1f3705; }
 
 .nav-login {
   position: relative; }
-
-nav .dropdown-button {
-  height: 50px; }
 
 .dropdown-content {
   overflow: visible; }
@@ -1837,7 +1837,7 @@ nav .dropdown-button {
   content: '';
   position: absolute;
   top: -7px;
-  left: 66%;
+  left: 33%;
   border-bottom: 10px solid #ffffff;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
@@ -1866,7 +1866,8 @@ nav .dropdown-button {
   display: none; }
 
 .tutorial {
-  background: transparent url(../images/tutorial-1200.png) no-repeat;
+  display: none;
+  background: transparent url(//dev.robin-hood.net/images/tutorial-1200.png) no-repeat;
   z-index: 10000; }
 
 .treasure {
@@ -1875,14 +1876,14 @@ nav .dropdown-button {
   left: 42%;
   opacity: 0; }
 
+.treasure img {
+  width: 250px;
+  height: 143px; }
+
 .treasure-mobile {
   margin-left: 28vw;
   top: 65vh;
   position: relative; }
-
-.treasure img {
-  width: 250px;
-  height: 143px; }
 
 .treasure-mobile img {
   width: 451px;
@@ -1897,7 +1898,7 @@ nav .dropdown-button {
   top: 0;
   max-height: 50px;
   width: auto;
-  max-width: 80px; }
+  max-width: 50px; }
 
 .planks {
   height: 100%;
@@ -2070,6 +2071,9 @@ input, textarea {
 .hidden {
   display: none; }
 
+.visible {
+  display: block; }
+
 .container {
   color: #ffe7ca;
   font-size: 1.1rem;
@@ -2085,23 +2089,18 @@ input, textarea {
   font-size: 4.5rem; }
 
 .page-sub-title, .page-sub-title-2, .page-sub-title-3 {
+  font-size: 1.2rem;
+  font-weight: 900;
   position: relative;
   top: -20px; }
 
 .page-sub-title-2, .page-sub-title-3 {
-  font-family: "Source Sans Pro", sans-serif; }
-
-.page-sub-title {
-  font-size: 1.2rem;
-  font-weight: 900; }
-
-.page-sub-title-2 {
-  font-size: 2rem;
-  font-weight: bold; }
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem; }
 
 .page-sub-title-3 {
   font-size: 1.5rem;
-  font-weight: 900; }
+  font-weight: bold; }
 
 .page-hr {
   border: 1px solid #ffe7ca;
@@ -2140,6 +2139,13 @@ input, textarea {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg); }
 
+.remodal-overlay {
+  background: rgba(0, 0, 0, 0.6); }
+
+.remodal-chest, .remodal-mobile-tutorial {
+  background-color: transparent;
+  color: #ffe7ca; }
+
 .card-title {
   color: #1f3705; }
 
@@ -2150,19 +2156,40 @@ input, textarea {
 #mobile-carousel-home .item {
   margin-top: 70px; }
 
-.remodal-overlay {
-  background: rgba(0, 0, 0, 0.6); }
-
-.remodal-chest, .remodal-mobile-tutorial {
-  background-color: transparent;
-  color: #ffe7ca; }
+@media (min-width: 1921px) {
+  nav {
+    height: 110px; }
+  .forest, .tutorial, .tutorial {
+    width: 1920px;
+    height: 1080px;
+    background: transparent url(//dev.robin-hood.net/images/trees-fade-bg-1200.png) no-repeat;
+    background-size: 1920px 1080px; }
+  .tutorial {
+    width: 1920px;
+    height: 1080px;
+    background: transparent url(../images/tutorial-1200.png) no-repeat;
+    background-size: 1920px 1080px; }
+  .traveler-logo {
+    max-height: 110px;
+    width: auto;
+    max-width: 110px; }
+  .plank, .plank-mobile {
+    background-size: 184px 130px;
+    height: 130px;
+    width: 184px;
+    opacity: 0; }
+  .treasure img {
+    width: 451px;
+    height: 258px; }
+  p, h5, ul {
+    font-size: 2rem !important; } }
 
 @media (max-width: 1199px) {
   nav {
     padding: 0 5%; }
-  nav ul a, nav a {
+  nav ul a, nav a, nav ul a {
     font-size: 1.1rem; }
-  .forest, .tutorial {
+  .forest, .tutorial, .tutorial {
     width: 990px;
     height: 557px;
     background: transparent url(//dev.robin-hood.net/images/trees-fade-bg-1200.png) no-repeat;
@@ -2176,7 +2203,7 @@ input, textarea {
     max-height: 40px;
     width: auto;
     max-width: 70px; }
-  .plank {
+  .plank, .plank-mobile {
     background-size: 90px 54px;
     height: 54px;
     width: 90px;
@@ -2185,13 +2212,13 @@ input, textarea {
     height: 52px;
     margin: 40px 0 0 20px;
     width: 100px; }
-  .page-numbers-large {
+  .page-numbers-large, .page-numbers-med {
     font-size: 6rem; }
   .page-title-2 {
     font-size: 4rem; } }
 
 @media (max-width: 991px) {
-  .forest, .tutorial {
+  .forest, .tutorial, .tutorial {
     width: 750px;
     height: 442px;
     background: transparent url(//dev.robin-hood.net/images/trees-fade-bg-768.png) no-repeat;
@@ -2202,7 +2229,7 @@ input, textarea {
     max-height: 35px;
     width: auto;
     max-width: 50px; }
-  .plank {
+  .plank, .plank-mobile {
     background-size: 80px 57px;
     height: 57px;
     width: 80px;
@@ -2213,8 +2240,6 @@ input, textarea {
   .treasure img {
     width: 175px;
     height: 100px; }
-  .caret:before {
-    left: 30%; }
   .page-title-2 {
     font-size: 3.5rem; } }
 
@@ -2231,13 +2256,13 @@ input, textarea {
     height: 42px;
     margin: 40px 0 0 20px;
     width: 80px; }
-  .page-numbers-large {
+  .page-numbers-large, .page-numbers-med {
     font-size: 5rem; }
   .page-title-2 {
     font-size: 2.7rem; }
-  .page-sub-title-2, .page-sub-title-3 {
+  .page-sub-title-2, .page-sub-title-3, .page-sub-title-3 {
     font-size: 1.2rem; }
-  .forest {
+  .forest, .tutorial {
     display: none !important; }
   .forest-mobile {
     background: #1f3705 url(//dev.robin-hood.net/images/mobile-bg.jpg) no-repeat center bottom;
@@ -2313,7 +2338,7 @@ input, textarea {
   .brand-logo img {
     width: 70% !important;
     height: auto; }
-  .page-title, .page-title-2 {
+  .page-title, .page-title-2, .page-title-2 {
     font-size: 3rem; }
   table {
     border-spacing: 7px; } }

@@ -1,5 +1,5 @@
 
-.forest, .tutorial {
+.forest {
   background: transparent url(#{$images-path}trees-fade-bg-1200.png) no-repeat;
   background-size: 1200px 675px;
   width: 1200px;
@@ -8,12 +8,16 @@
   margin: 0 auto;
   top: 0;
 }
+
 .forest-mobile {
   background: transparent url(#{$images-path}mobile-bg.png) no-repeat;
   display: none;
 }
+
 .tutorial {
-  background: transparent url(../images/tutorial-1200.png) no-repeat;
+  @extend .forest;
+  display: none;
+  background: transparent url(#{$images-path}tutorial-1200.png) no-repeat;
   z-index: 10000;
 }
 
@@ -23,15 +27,18 @@
   left: 42%;
   opacity: 0;
 }
+
+.treasure  img {
+  width: 250px;
+  height: 143px;
+}
+
 .treasure-mobile {
   margin-left: 28vw;
   top: 65vh;
   position: relative;
 }
-.treasure  img {
-  width: 250px;
-  height: 143px;
-}
+
 .treasure-mobile  img {
   width: 451px;
   height: 258px;
@@ -47,7 +54,7 @@
   top: 0;
   max-height: 50px;
   width: auto;
-  max-width: 80px;
+  max-width: 50px;
 }
 
 .planks {
@@ -57,8 +64,7 @@
   width: 100%;
 }
 
-.plank, .plank-mobile
-{
+.plank {
   background: url(#{$images-path}plank.png) no-repeat;
   background-size: 104px 73px;
   height: 73px;
@@ -66,7 +72,9 @@
   width: 104px;
   opacity: 0;
 }
+
 .plank-mobile {
+  @extend .plank;
   background-size: 140px 99px;
   height: 99px;
   margin: 30px auto;
@@ -108,6 +116,7 @@
   top: 77%;
   transform: rotate(-5deg);
 }
+
 .plank-7 {
   top: 15%;
   transform: rotate(-5deg);
@@ -127,6 +136,7 @@
   top: 67%;
   transform: rotate(-4deg);
 }
+
 .plank-12 {
   top: 15%;
   transform: rotate(-5deg);
@@ -144,6 +154,7 @@
 .plank-16 {
   top: 67%;
 }
+
 .plank-17 {
   top: 20%;
 }

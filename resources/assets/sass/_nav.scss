@@ -7,47 +7,73 @@ nav {
   box-shadow: none;
   padding: 0 10%;
   color: $primary-color;
+
+  a {
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  ul{
+    a {
+      @extend a;
+    }
+
+    a.active {
+      color: $link-active;
+    }
+
+    a:hover {
+      background-color: transparent;
+      color: $link-hover;
+    }
+
+    a.active:hover {
+      @extend a:hover;
+    }
+  }
+
+  .dropdown-button {
+    height: 50px;
+  }
 }
 
-nav ul a, nav a {
-  color: $primary-color;
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-
-nav ul a.active {
-  color: $link-active;
-}
-
-nav ul a:hover, nav ul a.active:hover, .side-nav a.logo:hover {
+.side-nav a.logo:hover {
   background-color: transparent;
   color: $link-hover;
 }
 
-.side-nav a {
-  font-size: 1.3rem;
-  font-weight: bold;
+.side-nav {
+  a {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  a.active {
+    background-color: rgba(0,0,0,0.2);
+    color: $primary-color;
+  }
+
+  a:hover {
+    @extend a.active;
+  }
 }
-.side-nav a.active, .side-nav a:hover {
-  background-color: rgba(0,0,0,0.2);
-  color: $primary-color;
-}
+
 
 // Nav dropdown
 .nav-login {
   position: relative;
 }
-nav .dropdown-button {
-  height: 50px;
-}
+
 .dropdown-content {
   overflow: visible;
 }
+
 .caret:before {
   content: '';
   position: absolute;
   top: -7px;
-  left: 66%;
+  left: 33%;
   border-bottom: 10px solid #ffffff;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;

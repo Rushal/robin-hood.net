@@ -49,16 +49,16 @@ $(document).ready(function() {
     var width = $(window).width();
     if(window.location.pathname === '/' && width > 768) {
         if (!!Cookies.get('tutorial')) {
-            $('.tutorial').addClass('hidden');
             Cookies.remove('tutorial');
         } else {
             $('body').chardinJs('start');
+            $('.tutorial').addClass('visible');
             $('.tutorial').click(function () {
                 $('body').chardinJs('stop');
             });
             $('body').on('chardinJs:stop', function () {
                 Cookies.set('tutorial', 'completed', 36135);
-                $('.tutorial').fadeOut('slow').promise().addClass('hidden');
+                $('.tutorial').fadeOut('slow').promise().removeClass('visible');
             });
         }
     }

@@ -10,7 +10,6 @@ input, textarea {
 .home-bg, .bg {
   background: $primary-color url(#{$images-path}green-bg.jpg) no-repeat center center fixed;
   background-size: cover !important;
-  //height: auto;
   min-height: 100%;
   width: 100%;
 }
@@ -18,12 +17,17 @@ input, textarea {
 .link-alt {
   color: $link-alt;
 }
+
 .link-alt:hover {
   color: $link-alt-hover;
 }
 
 .hidden {
   display: none;
+}
+
+.visible {
+  display: block;
 }
 
 // Main container
@@ -34,35 +38,34 @@ input, textarea {
 }
 
 // Pages
-.page-title, .page-title-2 {
+.page-title {
   font-family: "lumberjackregular", "Source Sans Pro", sans-serif;
   font-size: 5rem;
   font-weight: normal;
   margin-bottom: 0;
 }
-  .page-title-2 {
-    font-size: 4.5rem;
-  }
 
-.page-sub-title, .page-sub-title-2, .page-sub-title-3 {
+.page-title-2 {
+  @extend .page-title;
+  font-size: 4.5rem;
+}
+
+.page-sub-title {
+  font-size: 1.2rem;
+  font-weight: 900;
   position: relative;
   top: -20px;
 }
-  .page-sub-title-2, .page-sub-title-3 {
-    font-family: "Source Sans Pro", sans-serif;
-  }
-  .page-sub-title {
-    font-size: 1.2rem;
-    font-weight: 900;
-  }
-  .page-sub-title-2 {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  .page-sub-title-3 {
-    font-size: 1.5rem;
-    font-weight: 900;
-  }
+.page-sub-title-2 {
+  @extend .page-sub-title;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+}
+.page-sub-title-3 {
+  @extend .page-sub-title-2;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
 .page-hr {
   border: 1px solid $font-color;
@@ -84,16 +87,17 @@ input, textarea {
   transform: rotate(180deg);
 }
 
-.page-numbers-large, .page-numbers-med {
+.page-numbers-large {
   font-family: "lumberjackregular", "Source Sans Pro", sans-serif;
   font-size: 8rem;
   font-weight: normal;
 }
 .page-numbers-med {
+  @extend .page-numbers-large;
   font-size: 6rem;
 }
 
-// collapsible
+// Collapsible Table
 .table-collapsible-header {
   background-color: #8c6a40 !important;
   margin-bottom: -24px;
@@ -106,16 +110,4 @@ input, textarea {
 
 .arrow .material-icons {
   transform: rotate(90deg);
-}
-
-.card-title {
-  color: $primary-color;
-}
-
-#mobile-carousel-home .owl-carousel, #mobile-carousel-home .owl-wrapper {
-  height: 100vh !important;
-  max-height: 100%;
-}
-#mobile-carousel-home .item {
-  margin-top: 70px;
 }

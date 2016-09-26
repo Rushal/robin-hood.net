@@ -10,14 +10,14 @@
         <div class="row">
             <div class="col s12 m5 page-numbers-large center-align">
                 2,376,235
-                <div class="page-sub-title-2">Total Travelers</div>
+                <div class="page-sub-title-3">Total Travelers</div>
             </div>
 
             <div class="col m2 hide-on-small-only rotate-cw-90"><img src="{{ asset ('images/bow.png') }}"/></div>
 
             <div class="col s12 m5 page-numbers-large center-align">
                 <span style="color: #9fce1d;">$776,235</span>
-                <div class="page-sub-title-2">Wealth Transfered</div>
+                <div class="page-sub-title-3">Wealth Transfered</div>
             </div>
         </div>
 
@@ -26,12 +26,12 @@
         <div class="row">
             <div class="col s12 m6 page-title-2">
                 CHARITY DATA
-                <div class="page-sub-title-3">Money given to Charity</div>
+                <div class="page-sub-title-2">Money given to Charity</div>
             </div>
 
             <div class="col hide-on-small-only m6 page-title-2">
                 TRAVELER DATA
-                <div class="page-sub-title-3">Money received from Traveler</div>
+                <div class="page-sub-title-2">Money received from Traveler</div>
             </div>
 
             <div class="col s12 m6">
@@ -55,7 +55,7 @@
 
             <div class="col s12 hide-on-med-and-up page-title-2">
                 TRAVELER DATA
-                <div class="page-sub-title-3">Money received from Traveler</div>
+                <div class="page-sub-title-2">Money received from Traveler</div>
             </div>
 
             <div class="col s12 m6">
