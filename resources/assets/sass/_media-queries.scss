@@ -123,7 +123,10 @@
     display: none !important;
   }
   .forest-mobile {
+    background: $primary-color url(#{$images-path}mobile-bg.jpg) no-repeat center bottom;
+    background-size: 100vw 100vh;
     display: block !important;
+    margin-top: -56px;
     padding-left: 0;
   }
   .forest-mobile .traveler-logo
@@ -131,6 +134,10 @@
     max-height: 90px;
     width: auto;
     max-width: 90px;
+  }
+
+  .carousel-item {
+    margin-top: 60px;
   }
 }
 
@@ -188,18 +195,6 @@
   }
 }
 
-@media (orientation: portrait) and (max-width: 600px) {
-  .forest-mobile {
-    background: $primary-color url(#{$images-path}mobile-bg.jpg) no-repeat center bottom;
-    background-size: 100vw 100vh;
-    overflow: hidden;
-    margin-top: -56px;
-  }
-  .carousel-item {
-    margin-top: 60px;
-  }
-}
-
 @media (max-width:456px) {
   .bg {
     background: $primary-color url(#{$images-path}green-bg-480.jpg) no-repeat center center fixed;
@@ -208,10 +203,6 @@
   .brand-logo img {
     width: 70% !important;
     height: auto;
-  }
-
-  .treasure-mobile {
-    //left: -50%;
   }
 
   .page-title, .page-title-2 {

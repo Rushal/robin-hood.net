@@ -46,9 +46,11 @@ $(document).ready(function() {
 
 
     // Tutorial
-    if(window.location.pathname === '/') {
+    var width = $(window).width();
+    if(window.location.pathname === '/' && width > 768) {
         if (!!Cookies.get('tutorial')) {
             $('.tutorial').addClass('hidden');
+            Cookies.remove('tutorial');
         } else {
             $('body').chardinJs('start');
             $('.tutorial').click(function () {
@@ -62,7 +64,7 @@ $(document).ready(function() {
     }
 
     // Tutorial Mobile
-    if(window.location.pathname === '/') {
+    if(window.location.pathname === '/' && width < 768) {
         if (!!Cookies.get('mobile_tutorial')) {
             Cookies.remove('mobile_tutorial');
         } else {
@@ -70,7 +72,7 @@ $(document).ready(function() {
             var mobileTutorial = $('[data-remodal-id=mobile-tutorial]').remodal();
             mobileTutorial.open();
 
-            $(document).on('closing', '.remodal', function (e) {
+            $(document).on('closing', '.remodal', function () {
                 $('.carousel').removeClass('hidden');
                 Cookies.set('mobile_tutorial', 'completed', 36135);
             });

@@ -2228,12 +2228,17 @@ input, textarea {
   .forest {
     display: none !important; }
   .forest-mobile {
+    background: #1f3705 url(//dev.robin-hood.net/images/mobile-bg.jpg) no-repeat center bottom;
+    background-size: 100vw 100vh;
     display: block !important;
+    margin-top: -56px;
     padding-left: 0; }
   .forest-mobile .traveler-logo {
     max-height: 90px;
     width: auto;
-    max-width: 90px; } }
+    max-width: 90px; }
+  .carousel-item {
+    margin-top: 60px; } }
 
 @media (max-width: 768px) and (max-height: 500px) {
   .forest-mobile {
@@ -2278,15 +2283,6 @@ input, textarea {
     margin-left: 45px;
     top: 40vh;
     width: 335px; } }
-
-@media (orientation: portrait) and (max-width: 600px) {
-  .forest-mobile {
-    background: #1f3705 url(//dev.robin-hood.net/images/mobile-bg.jpg) no-repeat center bottom;
-    background-size: 100vw 100vh;
-    overflow: hidden;
-    margin-top: -56px; }
-  .carousel-item {
-    margin-top: 60px; } }
 
 @media (max-width: 456px) {
   .bg {
