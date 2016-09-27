@@ -7,13 +7,12 @@
 @section('content')
     <div class="container">
         <div class="row">
-            @include('partials.errors')
-            @include('partials.success')
-
             <div class="login col s12 m8 offset-m2">
                 <div class="card">
                     <div class="card-content">
                         <span class="card-title">Contact Us</span>
+                        @include('partials.errors')
+                        @include('partials.success')
 
                         <form role="form" method="POST" action="{{ url('/contact') }}" class="col s12">
                             {{ csrf_field() }}

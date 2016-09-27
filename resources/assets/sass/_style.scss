@@ -7,6 +7,8 @@ input, textarea {
   color: #000;
 }
 
+strong { font-weight: bold; }
+
 .home-bg, .bg {
   background: $primary-color url(#{$images-path}green-bg.jpg) no-repeat center center fixed;
   background-size: cover !important;

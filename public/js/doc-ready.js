@@ -89,4 +89,10 @@ $(document).ready(function() {
         chest.close();
         mobileTutorial.close();
     });
+
+
+    // dismiss alert
+    $('[data-dismiss=alert]').click(function() {
+        $(this).parent().addClass('hidden');
+    })
 });
