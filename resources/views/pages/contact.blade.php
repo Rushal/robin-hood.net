@@ -2,11 +2,10 @@
 
 @section('content')
     <div class="container">
-        <!--<h1 class="page-title">CONTACT US</h1>
-        <p class="page-sub-title">You can contact us using the information listed here.</p>
-
-        <hr class="page-hr"/>-->
         <div class="row">
+            @include('partials.errors')
+            @include('partials.success')
+
             <div class="login col s12 m8 offset-m2">
                 <div class="card">
                     <div class="card-content">

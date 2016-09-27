@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
+use App\Http\Requests\ContactMeRequest;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -16,9 +17,9 @@ class ContactController extends Controller
     public function sendContactEmail(Requests\ContactMeRequest $request)
     {
         $data = $request->only('name', 'email');
-        $data['messageLine'] = explode("\n", $request->get('message'));
+        $data['messageLines'] = explode("\n", $request->get('message'));
 
-        Mail::send('email.contact', $data, function ($message) use ($data){
+        Mail::queue('emails.contact', $data, function ($message) use ($data){
             $message->subject('Robin-Hood.net Contact Form: '.$data['name'])
                 ->to(config('mail.contact_email'))
                 ->replyTo($data['email']);
