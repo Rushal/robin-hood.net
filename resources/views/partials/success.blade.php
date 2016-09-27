@@ -6,6 +6,6 @@
     </div>
 
     <script>
-        Materialize.toast({{ Session::get('success') }}, 4000)
+        Materialize.toast('{{ Session::get('success') }}', 4000);
     </script>
 @endif
