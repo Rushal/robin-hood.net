@@ -12,7 +12,7 @@
                     <div class="card-content">
                         <span class="card-title">Contact Us</span>
 
-                        <form role="form" method="POST" action="{{ url('/login') }}" class="col s12">
+                        <form role="form" method="POST" action="{{ url('/contact') }}" class="col s12">
                             {{ csrf_field() }}
 
                             <div class="input-field col s12{{ $errors->has('name') ? ' has-error' : '' }}">

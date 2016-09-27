@@ -3,12 +3,14 @@
   nav {
     height: 110px;
   }
-  .forest, .tutorial {
+
+  .forest {
     width: 1920px;
     height: 1080px;
     background: transparent url(#{$images-path}trees-fade-bg-1200.png) no-repeat;
     background-size: 1920px 1080px;
   }
+
   .tutorial {
     width: 1920px;
     height: 1080px;
@@ -22,6 +24,7 @@
     width: auto;
     max-width: 110px;
   }
+
   .plank
   {
     background-size: 184px 130px;
@@ -44,21 +47,23 @@
 @media (max-width:1199px) {
   nav {
     padding: 0 5%;
-  }
-  nav ul a, nav a {
-    font-size: 1.1rem;
+
+    ul {
+      a {
+        font-size: 1.1rem;
+      }
+    }
   }
 
-  .forest, .tutorial {
+  .forest {
     width: 990px;
     height: 557px;
     background: transparent url(#{$images-path}trees-fade-bg-1200.png) no-repeat;
     background-size: 990px 557px;
   }
+
   .tutorial {
-    width: 990px;
-    height: 557px;
-    background: transparent url(../images/tutorial-1200.png) no-repeat;
+    background: transparent url(#{$images-path}tutorial-1200.png) no-repeat;
     background-size: 990px 557px;
   }
 
@@ -68,6 +73,7 @@
     width: auto;
     max-width: 70px;
   }
+
   .plank
   {
     background-size: 90px 54px;
@@ -81,6 +87,7 @@
     margin: 40px 0 0 20px;
     width: 100px;
   }
+
   .page-numbers-large {
     font-size: 6rem;
   }
@@ -91,32 +98,35 @@
 }
 
 @media (max-width:991px) {
-  .forest, .tutorial {
+  .forest {
     width: 750px;
     height: 442px;
     background: transparent url(#{$images-path}trees-fade-bg-768.png) no-repeat;
     background-size: 750px 442px;
   }
+
   .tutorial {
     background: transparent url(../images/tutorial-768.png) no-repeat;
   }
-  .traveler-logo
-  {
+
+  .traveler-logo {
     max-height: 35px;
     width: auto;
     max-width: 50px;
   }
-  .plank
-  {
+
+  .plank {
     background-size: 80px 57px;
     height: 57px;
     width: 80px;
     opacity: 0;
   }
+
   .treasure {
     left: 45%;
     opacity: 0;
   }
+
   .treasure img {
     width: 175px;
     height: 100px;

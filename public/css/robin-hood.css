@@ -1919,7 +1919,7 @@ nav {
   background-size: 140px 99px;
   height: 99px;
   margin: 30px auto;
-  opacity: 1 !important;
+  opacity: 1;
   position: relative;
   width: 140px; }
 
@@ -2160,7 +2160,7 @@ input, textarea {
 @media (min-width: 1921px) {
   nav {
     height: 110px; }
-  .forest, .tutorial, .tutorial {
+  .forest, .tutorial {
     width: 1920px;
     height: 1080px;
     background: transparent url(//dev.robin-hood.net/images/trees-fade-bg-1200.png) no-repeat;
@@ -2188,17 +2188,15 @@ input, textarea {
 @media (max-width: 1199px) {
   nav {
     padding: 0 5%; }
-  nav ul a, nav a, nav ul a {
-    font-size: 1.1rem; }
-  .forest, .tutorial, .tutorial {
+    nav ul a {
+      font-size: 1.1rem; }
+  .forest, .tutorial {
     width: 990px;
     height: 557px;
     background: transparent url(//dev.robin-hood.net/images/trees-fade-bg-1200.png) no-repeat;
     background-size: 990px 557px; }
   .tutorial {
-    width: 990px;
-    height: 557px;
-    background: transparent url(../images/tutorial-1200.png) no-repeat;
+    background: transparent url(//dev.robin-hood.net/images/tutorial-1200.png) no-repeat;
     background-size: 990px 557px; }
   .traveler-logo {
     max-height: 40px;
@@ -2219,7 +2217,7 @@ input, textarea {
     font-size: 4rem; } }
 
 @media (max-width: 991px) {
-  .forest, .tutorial, .tutorial {
+  .forest, .tutorial {
     width: 750px;
     height: 442px;
     background: transparent url(//dev.robin-hood.net/images/trees-fade-bg-768.png) no-repeat;

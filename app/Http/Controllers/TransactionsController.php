@@ -11,8 +11,6 @@ class TransactionsController extends Controller
 {
     public function index()
     {
-        $now = Carbon::now();
-
         $transactions = Transaction::select(
             'id',
             'transaction_date',

@@ -11,23 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/how-it-works', function () {
-    return view('how-it-works');
-});
-Route::get('/history', function () {
-    return view('history');
-});
+Route::get('/', 'PagesController@index');
+Route::get('how-it-works', 'PagesController@howitworks');
+Route::get('history', 'PagesController@history');
+Route::get('bookkeeping', 'TransactionsController@index');
 
-Route::get('/bookkeeping', 'TransactionsController@index');
+Route::get('contact', 'ContactController@index');
+Route::post('contact', 'ContactController@sendContactEmail');
 
-Route::get('/contact', function () {
-    return view('contact');
-});
-
-Route::get('/chest-click', function () {
+Route::get('chest-click', function () {
     return view('chest-click');
 });
 

@@ -15,12 +15,11 @@ $(document).ready(function() {
 
 
     // Desktop planks
-    var planks = 0;
     $(".plank").hover( function () {
         if($(this).css('opacity') == 0) {
             $(this).fadeTo("slow", 1.0);
-            planks++;
-            if(planks >= 21){
+            $(this).addClass('on');
+            if($('.plank').filter('.on').length == 21){
                 $(".treasure").fadeTo("slow", 1.0);
                 $(".treasure img").wrap($('<a>', {
                     href: '#',
