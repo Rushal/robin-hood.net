@@ -27,6 +27,7 @@ class ContactMeRequest extends FormRequest
             'name' => 'required',
             'email' => 'required',
             'message' => 'required',
+            'g-recaptcha-response' => 'required|captcha',
         ];
     }
 }

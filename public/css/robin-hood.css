@@ -2140,6 +2140,9 @@ input, textarea {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg); }
 
+#rc-imageselect, .g-recaptcha {
+  display: inline-block; }
+
 .remodal-overlay {
   background: rgba(0, 0, 0, 0.6); }
 
@@ -2340,6 +2343,11 @@ input, textarea {
   .page-title, .page-title-2, .page-title-2 {
     font-size: 3rem; }
   table {
-    border-spacing: 7px; } }
+    border-spacing: 7px; }
+  #rc-imageselect, .g-recaptcha {
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75); } }
 
 /*# sourceMappingURL=robin-hood.css.map */

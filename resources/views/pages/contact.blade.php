@@ -1,5 +1,9 @@
 @extends('layouts.primary-layout')
 
+@section('header-scripts')
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+@endsection
+
 @section('content')
     <div class="container">
         <div class="row">
@@ -47,6 +51,9 @@
                                 @endif
                             </div>
 
+                            <div class="col s12 center">
+                                {!! app('captcha')->display() !!}
+                            </div>
 
                             <div class="col s12 center">
                                 <button type="submit" class="btn waves-effect">Contact Us</button>
