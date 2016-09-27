@@ -26,12 +26,3 @@ Route::get('chest-click', function () {
 Auth::routes();
 
 Route::get('dashboard', 'DashboardController@index');
-
-
-
-
-
-
-/*Route::get('/importExport', 'ImportBookkeepingController@importExport');
-Route::get('/downloadExcel/{type}', 'ImportBookkeepingController@downloadExcel');
-Route::post('/importExcel', 'ImportBookkeepingController@importExcel');*/

@@ -3,13 +3,8 @@
 Initial git for work on the site.
 
 	TODO:
-		Transfer static page data to database
-		    How it works (may not be worth it)
-		    History
 		Choose a payment processor and integrate
 		Integrate OAUTH?
-		Remove Excel import pages and services
-		
 		Remap CSS for mobile-first
 		Consolidate CSS
 		Consolidate JS and Plugins
@@ -35,3 +30,7 @@ Initial git for work on the site.
 		    Page for clicking on the treasure chest
 		    Mobile design is lacking currently - complete
 		    Bookkeeping in database
+		    Contact page
+		    How it works
+		    History
+		    Remove Excel import pages and services
