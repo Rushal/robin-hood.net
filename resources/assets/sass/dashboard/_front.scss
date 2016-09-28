@@ -1,0 +1,26 @@
+html, body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  height: 100%;
+}
+
+main {
+  background-color: color("robin-hood-secondary", "accent-1");;
+  padding-top: 30px;
+  min-height: 100%;
+}
+
+main, footer {
+  padding-left: 240px;
+}
+
+ul.side-nav li:first-of-type {
+  padding: 4px 0;
+}
+
+@media only screen and (max-width : 992px) {
+  main, footer {
+    padding-left: 0;
+  }
+
+}

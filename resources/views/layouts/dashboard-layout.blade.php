@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>{{ config('app.name') }}</title>
+    <title>{{ config('app.name') }}: Dashboard Home</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    @include('pages.partials.styles-partial')
+    @include('dashboard.partials.styles-partial')
 
     @yield('header-styles')
     @yield('header-scripts')
@@ -19,13 +19,17 @@
     </script>
 </head>
 
-<body @if (\Request::is('/')) class="home-bg" @else class="bg" @endif>
-    @include('pages.partials.nav-partial')
-    @include('pages.partials.login-modal-partial')
+<body>
+@include('dashboard.partials.nav-partial')
 
-    @yield('content')
+<main>
+    <div class="container">
+        @yield('content')
+    </div>
+</main>
 
-    @include('pages.partials.scripts-partial')
-    @yield('footer-scripts')
+@include('dashboard.partials.scripts-partial')
+@yield('footer-scripts')
+
 </body>
 </html>

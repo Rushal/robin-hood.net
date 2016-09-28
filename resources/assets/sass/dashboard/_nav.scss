@@ -1,0 +1,63 @@
+
+// Navigation
+nav {
+  box-shadow: none;
+  background-color: $primary-color;
+
+  a {
+  }
+
+  ul{
+    a {
+      @extend a;
+    }
+
+    a.active {
+      //color: $link-active;
+    }
+
+    a:hover {
+      background-color: transparent;
+      //color: $link-hover;
+    }
+
+    a.active:hover {
+      @extend a:hover;
+    }
+  }
+
+  .dropdown-button {
+    height: 50px;
+  }
+}
+
+.side-nav a.logo:hover {
+  background-color: transparent;
+}
+
+.side-nav {
+  a {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  a.active {
+    background-color: rgba(0,0,0,0.2);
+    color: $primary-color;
+  }
+
+  a:hover {
+    @extend a.active;
+  }
+}
+
+
+// Nav dropdown
+.nav-login {
+  position: relative;
+}
+
+// material icon margin
+.side-nav li > a > i.material-icons {
+  margin: 0 10px 0 0;
+}

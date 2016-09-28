@@ -15,6 +15,7 @@ require('laravel-elixir-vue');
 
 elixir(mix => {
     mix.sass('robin-hood.scss');
-    mix.sass('materialize.scss')
+    mix.sass('dashboard/dashboard.scss');
+    mix.sass('materialize.scss');
 //.webpack('robin-hood.js');
 });

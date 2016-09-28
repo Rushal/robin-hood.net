@@ -15,5 +15,8 @@
     "//": "materialize-css: git://github.com/Dogfalo/materialize.git",
     "vue": "^1.0.26",
     "vue-resource": "^0.9.3"
+  },
+  "dependencies": {
+    "chart.js": "^2.3.0"
   }
 }

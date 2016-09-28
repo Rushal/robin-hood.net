@@ -7,8 +7,8 @@
                 <div class="card">
                     <div class="card-content">
                         <span class="card-title">Contact Us</span>
-                        @include('partials.errors')
-                        @include('partials.success')
+                        @include('pages.partials.errors')
+                        @include('pages.partials.success')
 
                         <form role="form" method="POST" action="{{ url('/contact') }}" class="col s12">
                             {{ csrf_field() }}
