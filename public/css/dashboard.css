@@ -1790,11 +1790,12 @@
 html, body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 main {
   background-color: #F2EBE3;
-  padding-top: 30px;
+  padding-top: 10px;
   min-height: 100%; }
 
 main, footer {
@@ -1803,9 +1804,8 @@ main, footer {
 ul.side-nav li:first-of-type {
   padding: 4px 0; }
 
-@media only screen and (max-width: 992px) {
-  main, footer {
-    padding-left: 0; } }
+.container .row:last-of-type {
+  margin-bottom: 0; }
 
 nav {
   background-color: #FFFFFF; }
@@ -1853,6 +1853,10 @@ nav {
 
 .card-header {
   padding: 10px 20px; }
+
+@media only screen and (max-width: 992px) {
+  main, footer {
+    padding-left: 0; } }
 
 @media (max-width: 456px) {
   .brand-logo img {
