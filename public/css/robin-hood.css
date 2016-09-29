@@ -1807,6 +1807,8 @@ nav {
     color: #1f3705;
     font-weight: 700;
     font-size: 1.2rem; }
+  nav ul a {
+    margin-top: -5px; }
   nav ul a.active, nav ul .side-nav a:hover, .side-nav nav ul a:hover {
     color: #668809; }
   nav ul a:hover, nav ul a.active:hover, nav ul .side-nav a:hover, .side-nav nav ul a:hover {
@@ -1842,6 +1844,9 @@ nav {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   z-index: -1; }
+
+nav .button-collapse {
+  margin-top: -5px; }
 
 .login-modal {
   width: 500px; }

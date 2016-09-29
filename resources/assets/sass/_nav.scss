@@ -17,6 +17,7 @@ nav {
   ul{
     a {
       @extend a;
+      margin-top: -5px;
     }
 
     a.active {
@@ -78,4 +79,8 @@ nav {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   z-index: -1;
+}
+
+nav .button-collapse {
+  margin-top: -5px;
 }
