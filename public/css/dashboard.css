@@ -1809,8 +1809,11 @@ ul.side-nav li:first-of-type {
 
 nav {
   background-color: #FFFFFF; }
-  nav ul a:hover, nav ul a.active:hover, nav ul .side-nav a:hover, .side-nav nav ul a:hover {
-    background-color: transparent; }
+  nav ul a.active, nav ul a:hover, nav ul a.active:hover, nav ul .side-nav a:hover, .side-nav nav ul a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #63B110; }
+  nav ul a.active .material-icons, nav ul a:hover .material-icons {
+    color: #63B110; }
   nav .dropdown-button {
     height: 50px; }
 
@@ -1822,8 +1825,11 @@ nav {
   font-weight: bold; }
 
 .side-nav a.active, .side-nav a:hover, .side-nav nav ul a.active:hover, nav ul .side-nav a.active:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #775A36; }
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #63B110; }
+
+.side-nav a.active .material-icons, .side-nav a:hover .material-icons {
+  color: #63B110; }
 
 .nav-login {
   position: relative; }

@@ -6,6 +6,10 @@
 
 @section('content')
     <div class="row">
+        <h1>Dashboard</h1>
+    </div>
+
+    <div class="row">
         <div class="col s12 m8">
             <div class="card">
                 <div class="card-header"> <span class="card-title secondary-color-text">Visitors </span> <span class="card-title soft-text"> / </span> <span class="card-title primary-color-text"> Sales</span> </div>
