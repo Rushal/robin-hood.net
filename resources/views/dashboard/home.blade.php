@@ -10,6 +10,30 @@
     </div>
 
     <div class="row">
+        <div class="col s12 m8">
+            <div class="card">
+                <div class="card-header"> <span class="card-title secondary-color-text">Visitors </span> <span class="card-title soft-text"> / </span> <span class="card-title primary-color-text"> Sales</span> </div>
+                <div class="divider"></div>
+                <div class="card-content">
+                    <canvas id="graph-lined" height="403" width="806" style="width: 806px; height: 403px;"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-header"> <span class="card-title cyan-text text-accent-4">New </span> <span class="card-title soft-text"> / </span> <span class="card-title amber-text text-darken-3"> Returning</span>
+                    <p>Last 30 days</p>
+                </div>
+                <div class="divider"></div>
+                <div class="card-content" style="padding:40px;">
+                    <canvas id="graph-doughnut" width="332" height="332" style="width: 332px; height: 332px;">
+                    </canvas></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
         <div class="col s12 m6 l3">
             <div class="card cyan accent-4 hoverable">
                 <div class="card-content white-text">
@@ -50,29 +74,6 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col s12 m8">
-                <div class="card">
-                    <div class="card-header"> <span class="card-title secondary-color-text">Visitors </span> <span class="card-title soft-text"> / </span> <span class="card-title primary-color-text"> Sales</span> </div>
-                    <div class="divider"></div>
-                    <div class="card-content">
-                        <canvas id="graph-lined" height="403" width="806" style="width: 806px; height: 403px;"></canvas>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-header"> <span class="card-title cyan-text text-accent-4">New </span> <span class="card-title soft-text"> / </span> <span class="card-title amber-text text-darken-3"> Returning</span>
-                        <p>Last 30 days</p>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="card-content" style="padding:40px;">
-                        <canvas id="graph-doughnut" width="332" height="332" style="width: 332px; height: 332px;">
-                        </canvas></div>
-                </div>
-            </div>
-        </div>
 
     </div>
 @endsection

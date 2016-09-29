@@ -1801,12 +1801,6 @@ main {
 main, footer {
   padding-left: 240px; }
 
-ul.side-nav li:first-of-type {
-  padding: 4px 0; }
-
-.container .row:last-of-type {
-  margin-bottom: 0; }
-
 nav {
   background-color: #FFFFFF; }
   nav ul a.active, nav ul a:hover, nav ul a.active:hover, nav ul .side-nav a:hover, .side-nav nav ul a:hover {
