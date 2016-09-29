@@ -184,6 +184,9 @@
     max-width: 90px;
   }
 
+  .plank-mobile.landscape-1 {
+    margin-top: 25%;
+  }
 }
 
 // Phone landscape
@@ -206,7 +209,7 @@
   .plank-mobile.landscape-1 {
     background-size: 90px 64px;
     height: 64px;
-    margin: 12% 0 0 6%;
+    margin: 13% 0 0 6%;
     transform: rotate(4deg);
     width: 90px;
   }

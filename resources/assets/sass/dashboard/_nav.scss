@@ -1,8 +1,11 @@
 
 // Navigation
 nav {
-  box-shadow: none;
-  background-color: $primary-color;
+  background-color: #FFFFFF;
+
+  .material-icons {
+    color: #000;
+  }
 
   a {
   }

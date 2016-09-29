@@ -1808,8 +1808,9 @@ ul.side-nav li:first-of-type {
     padding-left: 0; } }
 
 nav {
-  box-shadow: none;
-  background-color: #775A36; }
+  background-color: #FFFFFF; }
+  nav .material-icons {
+    color: #000; }
   nav ul a:hover, nav ul a.active:hover, nav ul .side-nav a:hover, .side-nav nav ul a:hover {
     background-color: transparent; }
   nav .dropdown-button {
