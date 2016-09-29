@@ -28,7 +28,7 @@
                         <li><a class="dropdown-button" href="#!" data-activates="account-dropdown" data-beloworigin="true"><i class="material-icons right">account_circle</i></a></li>
                         <ul id="account-dropdown" class="dropdown-content">
                             <div class="caret"></div>
-                            <li><a href="#!">@lang('navigation.dashboard')</a></li>
+                            <li><a href="{{ url('/dashboard') }}">@lang('navigation.dashboard')</a></li>
                             <li class="divider"></li>
                             <li>
                                 <a href="{{ url('/logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">@lang('navigation.logout')</a>
