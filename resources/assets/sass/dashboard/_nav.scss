@@ -3,10 +3,6 @@
 nav {
   background-color: #FFFFFF;
 
-  .material-icons {
-    color: #000;
-  }
-
   a {
   }
 
@@ -61,6 +57,24 @@ nav {
 }
 
 // material icon margin
+.material-icons {
+  color: #000;
+}
+
 .side-nav li > a > i.material-icons {
   margin: 0 10px 0 0;
+}
+
+.side-nav li.side-nav-inline {
+  text-align: center;
+  margin: 8px 0 0 0;
+}
+
+.side-nav.fixed a.inline {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.side-nav li.side-nav-inline i.material-icons {
+  margin: 0;
 }

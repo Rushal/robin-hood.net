@@ -1809,8 +1809,6 @@ ul.side-nav li:first-of-type {
 
 nav {
   background-color: #FFFFFF; }
-  nav .material-icons {
-    color: #000; }
   nav ul a:hover, nav ul a.active:hover, nav ul .side-nav a:hover, .side-nav nav ul a:hover {
     background-color: transparent; }
   nav .dropdown-button {
@@ -1830,8 +1828,22 @@ nav {
 .nav-login {
   position: relative; }
 
+.material-icons {
+  color: #000; }
+
 .side-nav li > a > i.material-icons, .side-nav nav ul li > a > i.material-icons {
   margin: 0 10px 0 0; }
+
+.side-nav li.side-nav-inline {
+  text-align: center;
+  margin: 8px 0 0 0; }
+
+.side-nav.fixed a.inline {
+  display: inline-block;
+  padding: 0 20px; }
+
+.side-nav li.side-nav-inline i.material-icons {
+  margin: 0; }
 
 .card-header {
   padding: 10px 20px; }
