@@ -1851,7 +1851,8 @@ nav .button-collapse {
 .login-modal {
   padding: 0;
   text-align: left;
-  width: 500px; }
+  width: 500px;
+  z-index: 999; }
 
 .login-modal .tabs, .login .tabs {
   background-color: transparent; }
@@ -2188,6 +2189,9 @@ strong {
   color: #a94442; }
 
 .alert button i {
+  color: #000000; }
+
+.help-block {
   color: #000000; }
 
 @media (min-width: 1921px) {
