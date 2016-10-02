@@ -26,3 +26,6 @@ Route::get('chest-click', function () {
 Auth::routes();
 
 Route::get('dashboard', 'DashboardController@index');
+Route::get('dashboard/billing', 'DashboardController@billing');
+Route::get('dashboard/organization', 'DashboardController@organization');
+Route::get('dashboard/user-management', 'DashboardController@user');

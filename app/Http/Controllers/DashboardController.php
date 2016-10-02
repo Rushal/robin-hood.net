@@ -15,5 +15,17 @@ class DashboardController extends Controller
     public function index(){
         return view('dashboard.home');
     }
+
+    public function billing(){
+        return view('dashboard.billing');
+    }
+
+    public function organization(){
+        return view('dashboard.organization');
+    }
+
+    public function user(){
+        return view('dashboard.user-management');
+    }
 }
 //

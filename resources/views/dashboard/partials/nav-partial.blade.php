@@ -27,7 +27,7 @@
     <li><div class="divider"></div></li>
 
     <li class="side-nav-inline">
-        <a href="{{ url('/dashboard') }}" class="inline waves-effect tooltipped active" data-tooltip="@lang('dashboard.dashboard')"><i class="material-icons">&#xE871;</i></a>
+        <a href="{{ url('/dashboard') }}" class="inline waves-effect tooltipped{!! \Request::is('dashboard') ? ' active' : '' !!}" data-tooltip="@lang('dashboard.dashboard')"><i class="material-icons">&#xE871;</i></a>
         <a href="#" class="inline waves-effect tooltipped" data-tooltip="@lang('dashboard.account-summary')"><i class="material-icons">&#xE8A6;</i></a>
         <a href="{{ url('logout') }}" class="inline waves-effect tooltipped" data-tooltip="@lang('navigation.logout')" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
             <i class="material-icons">&#xE879;</i>
@@ -35,7 +35,7 @@
     </li>
     <li><div class="divider"></div></li>
 
-    <li><a href="{{ url('#') }}" class="waves-effect{!! \Request::is('history') ? ' active' : '' !!}"><i class="material-icons">&#xE84F;</i> @lang('dashboard.billing')</a></li>
-    <li><a href="{{ url('#') }}" class="waves-effect{!! \Request::is('bookkeeping') ? ' active' : '' !!}"><i class="material-icons">&#xE0AF;</i> @lang('dashboard.organization')</a></li>
-    <li><a href="{{ url('#') }}" class="waves-effect{!! \Request::is('contact') ? ' active' : '' !!}"><i class="material-icons">&#xE8D3;</i> @lang('dashboard.user-management')</a></li>
+    <li><a href="{{ url('dashboard/billing') }}" class="waves-effect{!! \Request::is('dashboard/billing') ? ' active' : '' !!}"><i class="material-icons">&#xE84F;</i> @lang('dashboard.billing')</a></li>
+    <li><a href="{{ url('dashboard/organization') }}" class="waves-effect{!! \Request::is('dashboard/organization') ? ' active' : '' !!}"><i class="material-icons">&#xE0AF;</i> @lang('dashboard.organization')</a></li>
+    <li><a href="{{ url('dashboard/user-management') }}" class="waves-effect{!! \Request::is('dashboard/user-management') ? ' active' : '' !!}"><i class="material-icons">&#xE8D3;</i> @lang('dashboard.user-management')</a></li>
 </ul>
