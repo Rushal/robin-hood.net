@@ -1,11 +1,10 @@
 var midnight = new Date();
 midnight.setHours(23,59,59,0);
 
-
 // Set completion
 $('[data-remodal-id=chest]').click(function () {
     if(!Cookies.get('daily-click')) {
-        Cookies.set('daily-click', 'completed', midnight);
+        Cookies.set('daily-click', 'completed', { expires: midnight });
         $('.quote img').fadeTo("slow", 1.0);
     }
 });
@@ -91,13 +90,14 @@ $(document).ready(function() {
                 $('body').chardinJs('stop');
             });
             $('body').on('chardinJs:stop', function () {
-                Cookies.set('tutorial', 'completed', midnight);
+                Cookies.set('tutorial', 'completed', { expires: midnight });
                 $('.tutorial').fadeOut('slow').promise().removeClass('visible');
             });
         }
     }
 
     // Tutorial Mobile
+    var mobileTutorial = $('[data-remodal-id=mobile-tutorial]').remodal({hashTracking: false});
     if(window.location.pathname === '/' && width < 768) {
         if (!!Cookies.get('mobile-tutorial')) {
             //Cookies.remove('mobile_tutorial');
@@ -105,14 +105,13 @@ $(document).ready(function() {
             $('.owl-wrapper .owl-item').each(function() {
                 $(this).addClass('hidden');
             });
-            var mobileTutorial = $('[data-remodal-id=mobile-tutorial]').remodal({hashTracking: false});
             mobileTutorial.open();
 
             $(document).on('closing', '.remodal', function () {
                 $('.owl-wrapper .owl-item').each(function() {
                     $(this).removeClass('hidden');
                 });
-                Cookies.set('mobile-tutorial', 'completed', midnight);
+                Cookies.set('mobile-tutorial', 'completed', { expires: midnight });
             });
         }
     }
@@ -135,7 +134,7 @@ $(document).ready(function() {
 
     // Chest modal
     var chest = $('[data-remodal-id=chest]').remodal({hashTracking: false});
-    $('.remodal').click(function () {
+    $('.remodal-mobile-tutorial, .remodal-chest').click(function () {
         chest.close();
         mobileTutorial.close();
     });
