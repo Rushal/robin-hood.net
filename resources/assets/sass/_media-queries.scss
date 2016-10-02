@@ -212,6 +212,11 @@
   .plank-mobile.landscape-1 {
     margin-top: 25%;
   }
+
+  .treasure-mobile {
+    margin-left: 28vw;
+    top: 60vh;
+  }
 }
 
 // Phone landscape
@@ -261,9 +266,14 @@
   }
   
   .treasure-mobile.landscape {
-    height: 150px;
-    margin-left: 45px;
-    top: 40vh;
+    height: 192px;
+    margin-left: 35px;
+    top: 45vh;
+    width: 335px;
+  }
+
+  .treasure-mobile.landscape img {
+    height: 192px;
     width: 335px;
   }
 
