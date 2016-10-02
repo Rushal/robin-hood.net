@@ -41,8 +41,8 @@
                         </div>
 
                         <div class="input-field col s12{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
-                            <input id="password-confirm" type="password" class="validate" name="password_confirm" required>
-                            <label for="password-confirm">@lang('navigation.password.confirm')</label>
+                            <input id="password_confirmation" type="password" class="validate" name="password_confirmation" required>
+                            <label for="password_confirmation">@lang('navigation.password.confirm')</label>
                             @if ($errors->has('password_confirmation'))
                                 <span class="help-block">
                                     <strong>{{ $errors->first('password_confirmation') }}</strong>
