@@ -2394,12 +2394,14 @@ strong {
 @media (max-width: 600px) {
   .forest-mobile {
     margin-top: -56px; }
-  .treasure-mobile {
+  /*.treasure-mobile {
     margin-left: 15vw;
-    top: 60vh; }
-  .treasure-mobile img {
+    top: 60vh;
+  }
+  .treasure-mobile  img {
     width: 300px;
-    height: 172px; } }
+    height: 172px;
+  }*/ }
 
 @media (max-width: 456px) {
   .bg {
