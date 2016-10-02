@@ -1869,7 +1869,7 @@ nav .button-collapse {
   top: 0; }
 
 .forest-mobile {
-  background: transparent url(//dev.robin-hood.net/images/mobile-bg.png) no-repeat;
+  background: transparent url(//dev.robin-hood.net/images/mobile-bg.jpg) no-repeat;
   display: none; }
 
 .tutorial {
@@ -2201,7 +2201,7 @@ strong {
   .tutorial {
     width: 1920px;
     height: 1080px;
-    background: transparent url(../images/tutorial-1200.png) no-repeat;
+    background: transparent url(//dev.robin-hood.net/images/images/tutorial-1200.png) no-repeat;
     background-size: 1920px 1080px; }
   .traveler-logo {
     max-height: 110px;
