@@ -41,7 +41,7 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
-                            <input id="password-confirm" type="password" class="validate" name="password_confirmation" required>
+                            <input id="password-confirm" type="password" class="validate" name="password_confirm" required>
                             <label for="password-confirm">@lang('navigation.password.confirm')</label>
                             @if ($errors->has('password_confirmation'))
                                 <span class="help-block">
