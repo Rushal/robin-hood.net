@@ -1849,6 +1849,8 @@ nav .button-collapse {
   margin-top: -5px; }
 
 .login-modal {
+  padding: 0;
+  text-align: left;
   width: 500px; }
 
 .login-modal .tabs, .login .tabs {

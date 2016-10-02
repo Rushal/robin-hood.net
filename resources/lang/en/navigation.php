@@ -27,10 +27,11 @@ return [
     'name'                  => 'Name',
     'password'              => 'Password',
     'password.confirm'      => 'Confirm Password',
-    'password.reset'        => 'Forgot your password?',
+    'password.forgot'        => 'Forgot your password?',
     'register'              => 'Register',
     'remember'              => 'Remember me',
     'message'               => 'Message',
+    'password.reset'        => 'Reset Password',
 
 
 ];

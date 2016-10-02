@@ -19,7 +19,7 @@
                     @if (Auth::guest())
                         <li>
                             @if (!\Agent::isMobile())
-                                <a href="#login-modal" class="modal-trigger">@lang('navigation.login')</a>
+                                <a href="#login-modal" data-remodal-target="login-modal">@lang('navigation.login')</a>
                             @else
                                 <a href="{{ url('/login') }}"{!! \Request::is('login') ? ' class="active"' : '' !!}>@lang('navigation.login')</a>
                             @endif

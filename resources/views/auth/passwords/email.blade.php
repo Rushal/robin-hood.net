@@ -20,7 +20,7 @@
 
                             <div class="input-field col s12{{ $errors->has('email') ? ' has-error' : '' }}">
                                 <input id="email" type="email" class="validate" name="email" value="{{ old('email') }}" required autofocus>
-                                <label for="email" data-error="Please enter a valid email address">E-Mail Address</label>
+                                <label for="email" data-error="Please enter a valid email address">@lang('navigation.email.long')</label>
                             </div>
 
                             <div class="col s12">

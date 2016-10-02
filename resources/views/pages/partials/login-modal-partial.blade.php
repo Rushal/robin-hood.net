@@ -1,4 +1,4 @@
-<div id="login-modal" class="modal login-modal">
+<div id="login-modal" class="login-modal" data-remodal-id="login-modal">
     <div class="col s12">
         <ul class="tabs">
             <li class="tab col s3"><a href="#login" class="active">@lang('navigation.login')</a></li>
@@ -6,7 +6,6 @@
         </ul>
     </div>
 
-    <div class="modal-content">
         <div class="row">
             <div id="login">
                 <form role="form" method="POST" action="{{ url('/login') }}" class="col s12">
@@ -48,7 +47,7 @@
                     <div class="row">
                         <div class="col s12 center">
                             <button type="submit" class="btn waves-effect">@lang('navigation.login')</button>
-                            <a class="btn-flat" href="{{ url('/password/reset') }}">@lang('navigation.password.reset')</a>
+                            <a class="btn-flat" href="{{ url('/password/reset') }}">@lang('navigation.password.forgot')</a>
                         </div>
                     </div>
                 </form>
@@ -58,7 +57,7 @@
                     {{ csrf_field() }}
 
                     <div class="input-field col s12{{ $errors->has('name') ? ' has-error' : '' }}">
-                        <input id="name" type="text" class="validate" name="name" value="{{ old('name') }}" required autofocus>
+                        <input id="name" type="text" class="validate" name="name" value="{{ old('name') }}" required>
                         <label for="name">@lang('navigation.name')</label>
 
                         @if ($errors->has('name'))
@@ -107,5 +106,4 @@
             </div>
         </div>
 
-    </div>
 </div>

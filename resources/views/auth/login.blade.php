@@ -47,7 +47,7 @@
 
                                 <div class="col s12 center">
                                     <button type="submit" class="btn waves-effect">@lang('navigation.login')</button>
-                                    <a class="btn-flat" href="{{ url('/password/reset') }}">@lang('navigation.password.reset')</a>
+                                    <a class="btn-flat" href="{{ url('/password/reset') }}">@lang('navigation.password.forgot')</a>
                                 </div>
                             </form>
                         </div>
@@ -57,7 +57,7 @@
                                 {{ csrf_field() }}
 
                                 <div class="input-field col s12{{ $errors->has('name') ? ' has-error' : '' }}">
-                                    <input id="name" type="text" class="validate" name="name" value="{{ old('name') }}" required autofocus>
+                                    <input id="name" type="text" class="validate" name="name" value="{{ old('name') }}" required>
                                     <label for="name">@lang('navigation.name')</label>
 
                                     @if ($errors->has('name'))
