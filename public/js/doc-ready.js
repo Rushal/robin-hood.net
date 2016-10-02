@@ -9,11 +9,14 @@ $('[data-remodal-id=chest]').click(function () {
 });
 
 $(document).ready(function() {
+
+    // Side nav
     $(".button-collapse").sideNav({
         menuWidth: 250,
         edge: 'right',
         closeOnClick: true
     });
+
 
     // Desktop planks
     $(".plank").hover( function () {
@@ -118,6 +121,7 @@ $(document).ready(function() {
 
 
     // Login modal
+    $('[data-remodal-id=login-modal]').remodal();
     $(document).on('opening', '#login-modal', function () {
         $('ul.tabs').tabs();
     });
