@@ -1878,6 +1878,14 @@ nav .button-collapse {
   background: transparent url(//dev.robin-hood.net/images/tutorial-1200.png) no-repeat;
   z-index: 10000; }
 
+.quote img {
+  position: absolute;
+  top: 15%;
+  left: 37%;
+  width: 300px;
+  height: 247px;
+  opacity: 0; }
+
 .treasure {
   position: absolute;
   top: 65%;
@@ -2207,6 +2215,12 @@ strong {
     height: 1080px;
     background: transparent url(//dev.robin-hood.net/images/images/tutorial-1200.png) no-repeat;
     background-size: 1920px 1080px; }
+  .quote img {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    width: 381px;
+    height: 314px; }
   .traveler-logo {
     max-height: 110px;
     width: auto;
@@ -2235,13 +2249,19 @@ strong {
   .tutorial {
     background: transparent url(//dev.robin-hood.net/images/tutorial-1200.png) no-repeat;
     background-size: 990px 557px; }
+  .quote img {
+    position: absolute;
+    top: 15%;
+    left: 37%;
+    width: 250px;
+    height: 206px; }
   .traveler-logo {
-    max-height: 40px;
+    max-height: 50px;
     width: auto;
-    max-width: 70px; }
+    max-width: 50px; }
   .plank {
-    background-size: 90px 54px;
-    height: 54px;
+    background-size: 90px 64px;
+    height: 64px;
     width: 90px;
     opacity: 0; }
   .rotate-cw-90 img {
@@ -2261,8 +2281,14 @@ strong {
     background-size: 750px 442px; }
   .tutorial {
     background: transparent url(../images/tutorial-768.png) no-repeat; }
+  .quote img {
+    position: absolute;
+    top: 15%;
+    left: 37%;
+    width: 200px;
+    height: 165px; }
   .traveler-logo {
-    max-height: 35px;
+    max-height: 50px;
     width: auto;
     max-width: 50px; }
   .plank {

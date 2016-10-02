@@ -26,6 +26,7 @@
         <div class="plank plank-20"><img src="images/ad_logos/dell.png" class="traveler-logo"/></div>
         <div class="plank plank-21"><img src="images/ad_logos/citi.png" class="traveler-logo"/></div>
 
+        <div class="quote"><img src="{{ asset('images/uncompressed/quote.png') }}" alt=""/></div>
         <div class="treasure"><img src="images/chest.png" alt=""/></div>
     </div>
 </div>

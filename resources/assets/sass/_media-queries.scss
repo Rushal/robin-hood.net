@@ -18,6 +18,14 @@
     background-size: 1920px 1080px;
   }
 
+  .quote img {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    width: 381px;
+    height: 314px;
+  }
+
   .traveler-logo
   {
     max-height: 110px;
@@ -67,17 +75,25 @@
     background-size: 990px 557px;
   }
 
+  .quote img {
+    position: absolute;
+    top: 15%;
+    left: 37%;
+    width: 250px;
+    height: 206px;
+  }
+
   .traveler-logo
   {
-    max-height: 40px;
+    max-height: 50px;
     width: auto;
-    max-width: 70px;
+    max-width: 50px;
   }
 
   .plank
   {
-    background-size: 90px 54px;
-    height: 54px;
+    background-size: 90px 64px;
+    height: 64px;
     width: 90px;
     opacity: 0;
   }
@@ -109,8 +125,17 @@
     background: transparent url(../images/tutorial-768.png) no-repeat;
   }
 
+  .quote img {
+    position: absolute;
+    top: 15%;
+    left: 37%;
+    width: 200px;
+    height: 165px;
+  }
+
+
   .traveler-logo {
-    max-height: 35px;
+    max-height: 50px;
     width: auto;
     max-width: 50px;
   }

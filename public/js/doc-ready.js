@@ -4,8 +4,10 @@ midnight.setHours(23,59,59,0);
 
 // Set completion
 $('[data-remodal-id=chest]').click(function () {
-    if(!Cookies.get('daily-click'))
+    if(!Cookies.get('daily-click')) {
         Cookies.set('daily-click', 'completed', midnight);
+        $('.quote img').fadeTo("slow", 1.0);
+    }
 });
 
 $(document).ready(function() {
@@ -39,11 +41,14 @@ $(document).ready(function() {
         $('.plank').each(function () {
             $(this).fadeTo("slow", 1.0);
             $(this).addClass('on');
+
             $(".treasure").fadeTo("slow", 1.0);
             $(".treasure img").wrap($('<a>', {
                 href: '#',
                 "data-remodal-target": 'chest'
             }));
+
+            $('.quote img').fadeTo("slow", 1.0);
         })
     } else {
         // Desktop planks
@@ -51,6 +56,7 @@ $(document).ready(function() {
             if($(this).css('opacity') == 0) {
                 $(this).fadeTo("slow", 1.0);
                 $(this).addClass('on');
+
                 if($('.plank').filter('.on').length == 21){
                     $(".treasure").fadeTo("slow", 1.0);
                     $(".treasure img").wrap($('<a>', {
