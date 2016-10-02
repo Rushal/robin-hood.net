@@ -54,6 +54,7 @@
                             <button type="submit" class="btn waves-effect">@lang('navigation.password.reset')</button>
                         </div>
                     </form>
+                    <div class="clearfix"></div>
 
                 </div>
             </div>
