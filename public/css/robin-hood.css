@@ -1851,8 +1851,7 @@ nav .button-collapse {
 .login-modal {
   padding: 0;
   text-align: left;
-  width: 500px;
-  z-index: 1001; }
+  width: 500px; }
 
 .login-modal .tabs, .login .tabs {
   background-color: transparent; }
