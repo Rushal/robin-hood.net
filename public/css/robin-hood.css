@@ -2393,15 +2393,7 @@ strong {
 
 @media (max-width: 600px) {
   .forest-mobile {
-    margin-top: -56px; }
-  /*.treasure-mobile {
-    margin-left: 15vw;
-    top: 60vh;
-  }
-  .treasure-mobile  img {
-    width: 300px;
-    height: 172px;
-  }*/ }
+    margin-top: -56px; } }
 
 @media (max-width: 456px) {
   .bg {
@@ -2413,6 +2405,12 @@ strong {
     display: block !important;
     margin-top: -56px;
     padding-left: 0; }
+  .treasure-mobile {
+    margin-left: 15vw;
+    top: 60vh; }
+  .treasure-mobile img {
+    width: 300px;
+    height: 172px; }
   .brand-logo img {
     width: 70% !important;
     height: auto; }
