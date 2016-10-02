@@ -1914,7 +1914,7 @@ nav .button-collapse {
   top: 0;
   max-height: 50px;
   width: auto;
-  max-width: 50px; }
+  max-width: 75px; }
 
 .planks {
   height: 100%;
@@ -2327,7 +2327,7 @@ strong {
   .forest, .tutorial {
     display: none !important; }
   .forest-mobile {
-    background: #1f3705 url(//dev.robin-hood.net/images/mobile-bg.jpg) no-repeat center bottom;
+    background: #1f3705 url(//dev.robin-hood.net/images/mobile-bg-768.jpg) no-repeat center bottom;
     background-size: 100vw 100vh;
     display: block !important;
     margin-top: -56px;
@@ -2399,6 +2399,12 @@ strong {
   .bg {
     background: #1f3705 url(//dev.robin-hood.net/images/green-bg-480.jpg) no-repeat center center fixed;
     background-size: 480px 1080px; }
+  .forest-mobile {
+    background: #1f3705 url(//dev.robin-hood.net/images/mobile-bg.jpg) no-repeat center bottom;
+    background-size: 100vw 100vh;
+    display: block !important;
+    margin-top: -56px;
+    padding-left: 0; }
   .brand-logo img {
     width: 70% !important;
     height: auto; }
