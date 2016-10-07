@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="row">
-        <h1>@lang('dashboard.billing')</h1>
+        <h2>@lang('dashboard.billing')</h2>
     </div>
 
     <div class="row">

@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="row">
-        <h1>@lang('navigation.dashboard')</h1>
+        <h2>@lang('navigation.dashboard')</h2>
     </div>
 
     <div class="row">

@@ -1,5 +1,5 @@
-var midnight = new Date();
-midnight.setHours(23,59,59,0);
+var date = new Date();
+var midnight = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 23, 59, 59);
 
 // Set completion
 $('[data-remodal-id=chest]').click(function () {
